@@ -1,0 +1,743 @@
+/* --- 1. Variables Globales y Fuentes --- */
+:root {
+  --rojo-oscuro: #2f4f7f;
+  --verde-azulado: #2d3c48;
+  --blanco: #ffffff;
+  --azul-oscuro: #acd2ee;
+  --gris-cool: #f9f9f9;
+  --verde-musgo: #646F58;
+  --texto-principal: #333;
+  --texto-secundario: #444;
+}
+
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../assets/font/HelveticaNeueLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --- 2. Reset y Estilos Generales --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'MiFuente', 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden; /* Previene el scroll horizontal */
+}
+
+/* Estilo base para todas las secciones principales */
+.seccion {
+  width: 100%;
+  min-height: 100dvh; /* Usa dynamic-viewport-height para mejor compatibilidad móvil */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.seccion.oscuro {
+  background-color: #bdd8f3;
+}
+
+.claro {
+  background-color: var(--gris-cool);
+}
+
+/* --- 3. Tipografía --- */
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--blanco);
+  /* Tipografía fluida: min, ideal, max */
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--texto-principal);
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--blanco);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+a {
+  text-decoration: none;
+  color: var(--blanco);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+p, li {
+  line-height: 1.7;
+  color: var(--texto-secundario);
+}
+
+/* --- 4. Barra de Navegación --- */
+.seccion-nav-bar {
+  background-color: var(--rojo-oscuro);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0;
+}
+
+#menu {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  align-items: center;
+}
+
+.enlace-menu {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.enlace-menu:hover {
+  background-color: var(--verde-musgo);
+}
+
+
+/* --- 5. Sección: Welcome --- */
+#welcome-section {
+  flex-direction: row; /* MODIFICADO: Layout horizontal */
+  flex-wrap: wrap; /* Permite que se apile en pantallas pequeñas */
+  justify-content: center;
+  align-items: center;
+  gap: 0rem; /* Espacio entre el bloque de bienvenida y el de contacto */
+  text-align: center;
+  background-image: url('../assets/img/fondo 3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#welcome-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+#welcome-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-hero img {
+  width: 900px;
+  max-width: 70vw;
+}
+
+/* ESTILOS PARA EL BLOQUE DE CONTACTO EN WELCOME */
+.welcome-contact-box {
+  background-color: rgba(4, 5, 7, 0.265);
+  padding: 2.5rem 3rem; /* MODIFICADO: Más grande */
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.453);
+  backdrop-filter: blur(5px);
+  max-width: 600px; /* MODIFICADO: Más grande */
+  min-width: 300px;
+  margin-left:-25rem;
+}
+
+.welcome-contact-box .contact-title {
+  color: white;
+  margin-bottom:1rem;
+  font-size: 2rem; /* MODIFICADO: Más grande */
+  /* border-bottom: 2px solid var(--rojo-oscuro); */
+}
+
+.welcome-contact-box .contact-list {
+  text-align: left;
+  list-style-type: none;
+}
+
+.welcome-contact-box .contact-list li {
+  font-size: 1.4rem; /* MODIFICADO: Más grande */
+}
+
+.welcome-contact-box .contact-list a,
+.welcome-contact-box .contact-list i {
+  color: white;
+}
+
+.welcome-contact-box .contact-list a:hover {
+  color: var(--rojo-oscuro);
+}
+
+.welcome-contact-box .profile-link {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.welcome-contact-box .profile-link:hover {
+  color: #00aaff !important;
+}
+
+
+
+/* --- 6. Sección: Sobre Mí --- */
+#sobremi-section {
+  background-image: url('../assets/img/fondo 5 difuminado.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#contenedor-sobremi {
+  max-width: 1200px;
+  padding: 3rem 2rem;
+  background-color: rgba(249, 249, 249, 0.9); /* Fondo con transparencia */
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+#sobremi-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+#sobremi-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--rojo-oscuro);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+#sobremi-section p {
+  font-size: 1.05rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+#sobremi-section p strong {
+  color: #000;
+  font-weight: 700;
+}
+
+/* --- 7. Sección: CV --- */
+#cv {
+  background-image: url('../assets/img/fondo 7 difuminado.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor-cv {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1600px; /* MODIFICADO: Aumentado para reducir márgenes en PC */  
+  padding: 1rem;
+}
+
+#columna-1,
+#columna-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1; /* Las columnas ocupan el mismo espacio */
+}
+
+/* Estilo unificado para todas las "tarjetas" del CV */
+.experiencia-educacion, #habilidades, #herramientas {
+  background-color: #f9fafd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Estilo unificado para los títulos de las tarjetas del CV */
+.experiencia-educacion h2, #habilidades h2, #herramientas h2, #certificaciones h2 {
+  color: white;
+  background-color: var(--rojo-oscuro);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+#cv ul {
+  padding-left: 20px; /* Mantiene la indentación de las listas */
+}
+
+#cv li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#habilidades ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#habilidades > ul > li {
+  font-weight: bold;
+}
+
+#habilidades > ul > ul {
+  padding-left: 20px;
+  margin-top: 0.5rem;
+  list-style: disc;
+}
+
+/* --- Estilos para la sección de certificaciones --- */
+
+/* Contenedor principal */
+/*#certificaciones {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  max-width: 720px; /* Ancho similar a LinkedIn */
+/*  margin: 40px auto; /* Centra el bloque en la página */
+/*}*/
+
+/* #certificaciones h2 {
+ color: white;
+  background-color: var(--rojo-oscuro);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 1.3rem; */
+/*}
+
+/* Eliminar estilos de la lista */
+#lista-certificaciones {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada "tarjeta" de certificación */
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0; /* Línea divisoria */
+}
+
+/* Último elemento sin línea divisoria */
+.cert-item:last-child {
+  border-bottom: none;
+}
+
+/* Logo de la empresa */
+.cert-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+  object-fit: contain; /* Asegura que el logo se vea bien */
+}
+
+/* Contenedor de la información de texto */
+.cert-info {
+  flex-grow: 1;
+}
+
+/* Estilos de los textos */
+.cert-info p, .cert-info h3 {
+  margin: 0 0 4px 0; /* Espaciado entre líneas */
+}
+
+.cert-titulo {
+  font-size: 16px;
+  font-weight: 600;
+  color: #191919;
+}
+
+.cert-organizacion, .cert-fecha, .cert-id {
+  font-size: 14px;
+  color: #606060;
+}
+
+.cert-id {
+  margin-top: 8px; /* Espacio extra para el ID */
+}
+
+/* Botón "Mostrar credencial" */
+.cert-boton {
+  display: inline-flex; /* Para alinear el texto y el icono */
+  align-items: center;
+  margin-top: 12px;
+  padding: 6px 12px;
+  border: 1px solid #606060;
+  border-radius: 20px; /* Bordes redondeados */
+  color: #606060;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.cert-boton:hover {
+  background-color: #f0f0f0; /* Fondo gris claro al pasar el ratón */
+  box-shadow: inset 0 0 0 1px #606060;
+}
+
+/* Icono dentro del botón */
+.cert-icono {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  fill: currentColor; /* El icono toma el color del texto */
+}
+
+/* --- 8. Sección: Proyectos --- */
+#projects {
+  background: linear-gradient(to bottom, #ffffff, #bdd8f3);
+  gap: 3rem; /* AÑADIDO: Espacio vertical entre filas y título */
+}
+
+#head-proyectos {
+  color: var(--rojo-oscuro);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#fila-1,
+#fila-2 {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 3rem; /* AUMENTADO para evitar solapamiento */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project-tile {
+  width: 300px; 
+  height: 250px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.project-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.project-tile:hover img {
+  opacity: 0.8;
+}
+
+.titulo-tarjeta, .ABR {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.project-title {
+  color: var(--blanco);
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+
+/* --- 9. Sección: Contacto --- */
+#contacto {
+  flex-direction: row;
+  gap: 5rem;
+  flex-wrap: wrap; /* Para mejor ajuste */
+}
+
+/* CORRECCIÓN: Estilos para restaurar el layout de imágenes en PC */
+#img-izq {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+div[id="col izq"], div[id="col der"] {
+  display: flex;
+  flex-direction: column;
+}
+
+#img-izq img, #transparente {
+  width: 300px;  /* Ancho fijo para las imágenes y espaciadores */
+  height: 250px; /* Alto fijo */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#transparente {
+  background: transparent; /* Aseguramos que es invisible */
+}
+
+/* Ocultar divs de espaciado no utilizados */
+#transparente1, #transparente2, #transparente3 {
+  display: none;
+}
+
+#bloque-der {
+  text-align: left;
+}
+
+#trabajemos {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--rojo-oscuro);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--texto-principal);
+}
+
+#contactos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#contactos li {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#contactos a {
+  color: var(--texto-principal);
+}
+
+#contactos a#profile-link {
+  color: #0077b5; /* LinkedIn blue */
+  font-weight: bold;
+}
+
+#contactos a:hover {
+  color: var(--rojo-oscuro);
+}
+
+/* --- 10. Media Queries para Responsividad --- */
+
+/*-- Para Tablets (hasta 1024px) --*/
+@media (max-width: 1024px) {
+  .seccion {
+    padding: 3rem 1.5rem;
+  }
+  
+  .welcome-contact-box {
+    margin-left:0rem;
+  }
+
+  #cv {
+    min-height: auto; 
+    height: auto;
+  }
+
+  .contenedor-cv {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  #contacto {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  /* Se ocultan las imágenes decorativas en tablets y móviles */
+  #img-izq {
+    display: none; 
+  }
+
+  #trabajemos {
+    text-align: center;
+  }
+
+  #contactos {
+    align-items: center;
+  }
+}
+
+
+/*-- Para Móviles (hasta 768px) --*/
+@media (max-width: 768px) {
+  #menu {
+    gap: 0.5rem; 
+    justify-content: space-around;
+    width: 100%;
+  }
+
+   .welcome-contact-box {
+    margin-left:0rem;
+  }
+  .enlace-menu {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .project-tile img {
+    object-position: center; /* AÑADIDO: Centra la imagen en la tarjeta */
+  }
+
+  #sobremi-section h2 {
+    font-size: 1.6rem;
+  }
+
+  #sobremi-section p {
+    font-size: 1rem;
+  }
+
+  #fila-1,
+  #fila-2 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-tile {
+    width: 80vw;
+    height: 220px;
+  }
+
+  #contacto {
+    padding: 3rem 1rem;
+  }
+  
+  #trabajemos {
+    font-size: 1.8rem;
+  }
+
+  #contactos li {
+    font-size: 1rem;
+    flex-direction: column; 
+    gap: 0.5rem;
+  }
+}
+
+/* --- 11. Estilos del Footer --- */
+.site-footer {
+  background-color: var(--rojo-oscuro);
+  color: var(--blanco);
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.footer-about, .footer-links, .footer-social {
+  flex: 1;
+  min-width: 250px; /* Ayuda a que se reordene correctamente */
+}
+
+.site-footer h3, .site-footer h4 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--blanco);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.site-footer p {
+  color: #ccc; /* Un blanco menos intenso para el texto secundario */
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.site-footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+.site-footer a {
+  color: var(--blanco);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.site-footer a:hover {
+  opacity: 0.75;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--verde-musgo);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+.back-to-top {
+  font-weight: bold;
+}
+
+/* --- Media query para el Footer --- */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
