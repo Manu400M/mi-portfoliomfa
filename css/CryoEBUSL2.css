@@ -163,12 +163,12 @@ html, body {
 .carousel-focus {
     display: none; /* Oculto por defecto */
     position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.85);
+    inset: 0; /* Abreviatura para top, right, bottom, left: 0 */
+    background: rgba(0, 0, 0, 0.85);
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    padding: 1rem;
+    padding: 2rem; /* Espacio para que no toque los bordes */
 }
 
 .carousel-focus.active {
@@ -179,38 +179,56 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: flex; /* Mantenemos flex para centrar */
     justify-content: center;
     align-items: center;
 }
 
-.carousel-focus .focus-content img {
-    display: none;
-    max-width: 90vw;
-    max-height: 85vh;
-    object-fit: contain;
+/* ESTILOS PARA EL CARRUSEL CLONADO DENTRO DEL OVERLAY */
+
+/* 1. Hacemos el contenedor principal transparente y flexible */
+.carousel-focus .carousel-container {
+    background-color: transparent; /* Quitamos el fondo azul */
+    box-shadow: none;             /* Quitamos la sombra */
+    padding: 0;                   /* Quitamos el padding interno */
+    width: 100%;
+    height: 100%;
+    max-width: 95vw;              /* Límite de ancho */
+    max-height: 95vh;             /* Límite de alto */
 }
 
-.carousel-focus .focus-content img.active {
-    display: block;
+/* 2. Hacemos el título más grande y visible en el fondo oscuro */
+.carousel-focus .carousel-container h2 {
+    color: white;
+    font-size: 1.8rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Botones en modo enfoque */
+/* 3. Ajustamos el contenedor de la imagen para que use todo el espacio */
+.carousel-focus .carousel {
+    height: 100%;
+}
+
+/* 4. La clave: ajustamos la imagen para que se vea completa */
+.carousel-focus .carousel img {
+    object-fit: contain; /* Muestra la imagen completa sin recortar */
+    cursor: default;     /* El cursor ya no necesita ser un puntero */
+}
+
+/* 5. Posicionamos los botones de navegación de forma más prominente */
 .carousel-focus .prev,
 .carousel-focus .next {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    border: none;
-    color: white;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
-
+.carousel-focus .prev:hover,
+.carousel-focus .next:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
 .carousel-focus .prev { left: 1rem; }
 .carousel-focus .next { right: 1rem; }
 
@@ -218,16 +236,16 @@ html, body {
 .close-focus {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 1.5rem;
     background: transparent;
     border: none;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
     cursor: pointer;
     z-index: 10001;
     line-height: 1;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
-
 
 /* --- 7. MEDIA QUERIES PARA RESPONSIVIDAD --- */
 
