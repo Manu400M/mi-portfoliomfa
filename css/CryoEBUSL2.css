@@ -99,6 +99,34 @@ html, body {
     border-radius: 12px;  /* Bordes redondeados para coincidir con el diseño */
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra para darle profundidad */
 }
+
+/* --- ESTILOS PARA MENSAJE DE CARGA DE IMAGEN --- */
+
+/* Contenedor principal (ya lo teníamos, pero nos aseguramos de que sea relativo) */
+.modelo-3d {
+    position: relative; /* Necesario para posicionar el mensaje de carga dentro */
+}
+
+/* Estilos para el mensaje de carga */
+.loading-message {
+    position: absolute; /* Posición absoluta respecto al contenedor .modelo-3d */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    color: #2f4f7f; /* Color del texto */
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para legibilidad */
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 1; /* Asegura que esté por encima de la imagen (mientras carga) */
+}
+
+/* Estilo para la imagen para que aparezca suavemente */
+.modelo-3d img {
+    /* ...tus estilos existentes como max-width, height, etc... */
+    transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
+}
+
 /* --- 5. ESTILO DE LOS CARRUSELES (LATERALES) --- */
 .carousel-container {
     position: relative;

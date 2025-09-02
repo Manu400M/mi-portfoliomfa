@@ -110,3 +110,30 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') closeFocus();
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const image = document.getElementById('main-image');
+    const loadingMessage = document.getElementById('loading-message');
+
+    if (image && loadingMessage) {
+        // Extraer solo el nombre del archivo de la ruta
+        const imageName = image.src.split('/').pop();
+        
+        // 1. Mostrar el mensaje de carga inicial
+        loadingMessage.textContent = `Cargando: ${imageName}...`;
+
+        // 2. Cuando la imagen se carga correctamente
+        image.onload = () => {
+            console.log('✅ Imagen cargada correctamente.');
+            loadingMessage.style.display = 'none'; // Ocultar el mensaje
+            image.style.opacity = '1'; // Mostrar la imagen
+        };
+
+        // 3. (Opcional) Si la imagen falla al cargar
+        image.onerror = () => {
+            console.error('❌ Error al cargar la imagen.');
+            loadingMessage.textContent = `Error al cargar: ${imageName}`;
+            loadingMessage.style.color = 'red';
+        };
+    }
+});
