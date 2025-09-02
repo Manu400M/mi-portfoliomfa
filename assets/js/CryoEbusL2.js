@@ -137,3 +137,34 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // --- Lógica para el vídeo ---
+    const video = document.getElementById('main-video');
+    const videoLoadingMessage = document.getElementById('video-loading-message');
+
+    if (video && videoLoadingMessage) {
+        // Extraer solo el nombre del archivo de la ruta
+        const videoName = video.src.split('/').pop();
+        
+        // 1. Mostrar el mensaje de carga inicial
+        videoLoadingMessage.textContent = `Cargando vídeo: ${videoName}...`;
+
+        // 2. Cuando el vídeo tenga suficientes datos para reproducirse entero
+        video.addEventListener('canplaythrough', () => {
+            console.log('✅ Vídeo listo para reproducir.');
+            videoLoadingMessage.style.display = 'none'; // Ocultar el mensaje
+            video.style.opacity = '1'; // Mostrar el vídeo
+        });
+
+        // 3. (Opcional) Si el vídeo falla al cargar
+        video.addEventListener('error', () => {
+            console.error('❌ Error al cargar el vídeo.');
+            videoLoadingMessage.textContent = `Error al cargar el vídeo: ${videoName}`;
+            videoLoadingMessage.style.color = 'red';
+        });
+    }
+
+    // --- (Aquí puedes mantener la lógica para la imagen si está en la misma página) ---
+
+});

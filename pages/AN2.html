@@ -1,179 +1,252 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CryoEBUS Lineal - Dashboard</title>
-    <link rel="stylesheet" href="../css/CryoEBUSL2.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../css/CryoEBUSL2.css" />
+  </head>
+  <body>
     <div class="dashboard">
+      <section class="col-left">
+        <div class="carousel-container">
+          <h2>DISEÑO CAD</h2>
+          <div class="carousel">
+            <img
+              src="../assets/img/Capturas porfolio/Nasofaringe/alzado cabeza v1.png"
+              alt="Imagen de diseño CAD 1"
+              class="active"
+            />
+            <img
+              src="../assets/img/Capturas porfolio/Nasofaringe/perfil cabeza v1.png"
+              alt="Imagen de diseño CAD 2"
+            />
+            <img
+              src="../assets/img/Capturas porfolio/Nasofaringe/perfil moldes v1.png"
+              alt="Imagen de diseño CAD 3"
+            />
+            <img
+              src="../assets/img/Capturas porfolio/Nasofaringe/ensamblaje cabeza traquea cad frontal.png"
+              alt="Imagen de diseño CAD 4"
+            />
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="carousel-container">
+          <h2>RENDERS</h2>
+          <div class="carousel">
+            <img
+              src="../assets/img/Acceso Nasofaringe/nasorender.png"
+              alt="Render del producto 1"
+              class="active"
+            />
+            <!-- <img src="../assets/img/img_portfolio/Cardiologia/braquial 1.png" alt="Render del producto 2"> -->
+            <!-- <img src="../assets/img/img_portfolio/Cardiologia/braquial 3.png" alt="Render del producto 3"> -->
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
 
-        <section class="col-left">
-            <div class="carousel-container">
-                <h2>DISEÑO CAD</h2>
-                <div class="carousel">
-                    <img src="../assets/img/Capturas porfolio/Nasofaringe/alzado cabeza v1.png" alt="Imagen de diseño CAD 1" class="active">
-                    <img src="../assets/img/Capturas porfolio/Nasofaringe/perfil cabeza v1.png" alt="Imagen de diseño CAD 2">
-                    <img src="../assets/img/Capturas porfolio/Nasofaringe/perfil moldes v1.png" alt="Imagen de diseño CAD 3">
-                    <img src="../assets/img/Capturas porfolio/Nasofaringe/ensamblaje cabeza traquea cad frontal.png" alt="Imagen de diseño CAD 4">
-
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-            <div class="carousel-container">
-                <h2>RENDERS</h2>
-                <div class="carousel">
-                    <img src="../assets/img/Acceso Nasofaringe/nasorender.png" alt="Render del producto 1" class="active">
-                    <!-- <img src="../assets/img/img_portfolio/Cardiologia/braquial 1.png" alt="Render del producto 2"> -->
-                    <!-- <img src="../assets/img/img_portfolio/Cardiologia/braquial 3.png" alt="Render del producto 3"> -->
-
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
+      <section class="col-center">
+        <div class="texto">
+          <div id="link_titulo">
+            <h1>NASOFARINGE</h1>
+            <!-- <a id="linkpag" href="/pages/Acceso_Nasofaringe.html">Más Info+</a> -->
+          </div>
+          <div>
+            <h3>DISEÑO</h3>
+            <p>
+              Partiendo de un modelo anatómico real de la cavidad nasal, se
+              diseñó un simulador de vía aérea que incluye cavidad nasal, bucal,
+              cuerdas vocales; y el inicial de la tráquea y el esófago. Se
+              desarrollaron varias versiones, en primer lugar; una versión
+              modular compuesta por tres piezas intercambiables, y por otro
+              lado; una versión unificada con movimiento de epiglotis mediante
+              actuador lineal y colapso de la cavidad mediante presión positiva
+              en cámara de aire.
+            </p>
+          </div>
+          <div>
+            <h3>FABRICACIÓN</h3>
+            <p>
+              Se fabricaron sendos prototipos mediante impresión 3D y moldeado
+              por inyección que se emplean actualmente en cursos de neumología y
+              digestivo.
+            </p>
+          </div>
+        </div>
+        <section
+          id="model_viewer"
+          class="main-section"
+          style="
+            width: 100%;
+            height: 600px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <span id="video-loading-message" class="loading-message"></span>
+          <video
+            id="main-video"
+            src="../assets/vid/entrada cabeza.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 20px;
+            "
+          ></video>
         </section>
+      </section>
 
-        <section class="col-center">
-            <div class="texto">
-                <div id="link_titulo">
-                <h1>NASOFARINGE</h1>
-                <!-- <a id="linkpag" href="/pages/Acceso_Nasofaringe.html">Más Info+</a> -->
-              </div>
-                <div>
-                    <h3>DISEÑO</h3>
-                    <p>Partiendo de un modelo anatómico real de la cavidad nasal, se diseñó un simulador de vía aérea que incluye cavidad nasal, bucal, cuerdas vocales; y el inicial de la tráquea y el esófago. 
-                        Se desarrollaron varias versiones, en primer lugar; una versión modular compuesta por tres piezas intercambiables, y por otro lado; una versión unificada con movimiento de epiglotis 
-                        mediante actuador lineal y colapso de la cavidad mediante presión positiva en cámara de aire. </p>
-                </div>
-                <div>
-                    <h3>FABRICACIÓN</h3>
-                    <p>Se fabricaron sendos prototipos mediante impresión 3D y moldeado por inyección que se emplean actualmente en cursos de neumología y digestivo.</p>
-                </div>
-            </div>
-            <section id="model_viewer" class="main-section" style="width: 100%; height: 600px; background-color: transparent; display: flex; align-items: center; justify-content: center;">
-    <video src="../assets/vid/entrada cabeza.mp4" 
-           autoplay 
-           loop 
-           muted 
-           playsinline 
-           style="width: 100%; height: 100%; object-fit: cover;border-radius:20px;">
-    </video>
-</section>
-             
-        </section>
-
-        <section class="col-right">
-            <div class="carousel-container">
-                <h2>FABRICACIÓN</h2>
-                <div class="carousel">
-                    <img src="../assets/img/Acceso Nasofaringe/impresion cabeza.jpg" alt="Foto del proceso de fabricación 1" class="active">
-                    <img src="../assets/img/Acceso Nasofaringe/molde nariz.jpg" alt="Foto del proceso de fabricación 2">
-                    <img src="../assets/img/Acceso Nasofaringe/cabeza v1 manta rosa.jpg" alt="Foto del proceso de fabricación 3">
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-            <div class="carousel-container">
-                <h2>IMPLEMENTACIÓN</h2>
-                <div class="carousel">
-                    <img src="../assets/img/Acceso Nasofaringe/ensamblaje cabeza traquea horizontal.jpg" alt="Foto del simulador en uso 1" class="active">
-                    <img src="../assets/img/Acceso Nasofaringe/cabeza v1 horizontal.jpg" alt="Foto del simulador en uso 2">
-                    <!-- <img src="../assets/img/Acceso_Braquial/" alt="Foto del simulador en uso 2"> -->
-
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-
+      <section class="col-right">
+        <div class="carousel-container">
+          <h2>FABRICACIÓN</h2>
+          <div class="carousel">
+            <img
+              src="../assets/img/Acceso Nasofaringe/impresion cabeza.jpg"
+              alt="Foto del proceso de fabricación 1"
+              class="active"
+            />
+            <img
+              src="../assets/img/Acceso Nasofaringe/molde nariz.jpg"
+              alt="Foto del proceso de fabricación 2"
+            />
+            <img
+              src="../assets/img/Acceso Nasofaringe/cabeza v1 manta rosa.jpg"
+              alt="Foto del proceso de fabricación 3"
+            />
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="carousel-container">
+          <h2>IMPLEMENTACIÓN</h2>
+          <div class="carousel">
+            <img
+              src="../assets/img/Acceso Nasofaringe/ensamblaje cabeza traquea horizontal.jpg"
+              alt="Foto del simulador en uso 1"
+              class="active"
+            />
+            <img
+              src="../assets/img/Acceso Nasofaringe/cabeza v1 horizontal.jpg"
+              alt="Foto del simulador en uso 2"
+            />
+            <!-- <img src="../assets/img/Acceso_Braquial/" alt="Foto del simulador en uso 2"> -->
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
     </div>
 
     <!-- Babylon.js core y loader para GLTF -->
-<script src="https://cdn.babylonjs.com/babylon.js"></script>
-<script src="https://cdn.babylonjs.com/loaders/babylon.glTF2FileLoader.min.js"></script>
-
-<script>
-  window.addEventListener('DOMContentLoaded', function () {
-    const canvas = document.getElementById("babylon-canvas");
-    const engine = new BABYLON.Engine(canvas, true);
-
-    const createScene = function () {
-      const scene = new BABYLON.Scene(engine);
-      scene.clearColor = new BABYLON.Color4(0.27, 0.27, 0.27, 1);
-
-      // Cámara tipo Google Maps 3D
-      const camera = new BABYLON.ArcRotateCamera("camera",
-        -Math.PI / 2, Math.PI / 2.5,
-        5,
-        BABYLON.Vector3.Zero(),
-        scene
-      );
-      camera.attachControl(canvas, true); // 🟢 Habilita movimiento con el mouse
-      camera.useAutoRotationBehavior = false;
-
-      camera.panningSensibility = 50;      // Movimiento lateral (click derecho o ctrl+click)
-      camera.wheelDeltaPercentage = 0.01;  // Zoom suave
-      camera.lowerRadiusLimit = 0.2;       // Límite de zoom mínimo
-      camera.upperRadiusLimit = 20;        // Límite de zoom máximo
-
-      const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
-      light.intensity = 1.2;
-
-      BABYLON.SceneLoader.Append("../assets/3D/", "ABR2.glb", scene, function () {
-        console.log("✅ Modelo cargado correctamente");
-
-        const meshes = scene.meshes;
-        const root = meshes.find(m => m.name !== "__root__") || scene.meshes[0];
-
-        // Centrar cámara en el modelo
-        if (root) {
-          camera.target = root.getBoundingInfo().boundingBox.centerWorld;
-
-          // Auto escala si es pequeño
-          const size = root.getBoundingInfo().boundingBox.extendSizeWorld.length();
-          if (size < 0.5) {
-            root.scaling.scaleInPlace(1 / size);
-          }
-        }
-      }, null, function (_, message) {
-        console.error("❌ Error al cargar el modelo:", message);
-      });
-
-      return scene;
-    };
-
-    const scene = createScene();
-    engine.runRenderLoop(() => scene.render());
-
-    window.addEventListener("resize", () => engine.resize());
-  });
-</script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylon.glTF2FileLoader.min.js"></script>
 
     <script>
-  function openLightbox(img) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    lightbox.style.display = 'flex';
-    lightboxImg.src = img.src;
-  }
+      window.addEventListener("DOMContentLoaded", function () {
+        const canvas = document.getElementById("babylon-canvas");
+        const engine = new BABYLON.Engine(canvas, true);
 
-  function closeLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    lightbox.style.display = 'none';
-  }
-</script>
+        const createScene = function () {
+          const scene = new BABYLON.Scene(engine);
+          scene.clearColor = new BABYLON.Color4(0.27, 0.27, 0.27, 1);
 
-<script src="../assets/js/CryoEbusL2.js"></script>
+          // Cámara tipo Google Maps 3D
+          const camera = new BABYLON.ArcRotateCamera(
+            "camera",
+            -Math.PI / 2,
+            Math.PI / 2.5,
+            5,
+            BABYLON.Vector3.Zero(),
+            scene
+          );
+          camera.attachControl(canvas, true); // 🟢 Habilita movimiento con el mouse
+          camera.useAutoRotationBehavior = false;
 
-<!-- Contenedor de enfoque (overlay) -->
-<div class="carousel-focus" id="carouselFocus" aria-hidden="true">
-  <button class="close-focus" id="closeFocus" aria-label="Cerrar">&times;</button>
-  <div class="focus-content"></div>
-</div>
+          camera.panningSensibility = 50; // Movimiento lateral (click derecho o ctrl+click)
+          camera.wheelDeltaPercentage = 0.01; // Zoom suave
+          camera.lowerRadiusLimit = 0.2; // Límite de zoom mínimo
+          camera.upperRadiusLimit = 20; // Límite de zoom máximo
 
+          const light = new BABYLON.HemisphericLight(
+            "light",
+            new BABYLON.Vector3(0, 1, 0),
+            scene
+          );
+          light.intensity = 1.2;
 
-</body>
+          BABYLON.SceneLoader.Append(
+            "../assets/3D/",
+            "ABR2.glb",
+            scene,
+            function () {
+              console.log("✅ Modelo cargado correctamente");
+
+              const meshes = scene.meshes;
+              const root =
+                meshes.find((m) => m.name !== "__root__") || scene.meshes[0];
+
+              // Centrar cámara en el modelo
+              if (root) {
+                camera.target = root.getBoundingInfo().boundingBox.centerWorld;
+
+                // Auto escala si es pequeño
+                const size = root
+                  .getBoundingInfo()
+                  .boundingBox.extendSizeWorld.length();
+                if (size < 0.5) {
+                  root.scaling.scaleInPlace(1 / size);
+                }
+              }
+            },
+            null,
+            function (_, message) {
+              console.error("❌ Error al cargar el modelo:", message);
+            }
+          );
+
+          return scene;
+        };
+
+        const scene = createScene();
+        engine.runRenderLoop(() => scene.render());
+
+        window.addEventListener("resize", () => engine.resize());
+      });
+    </script>
+
+    <script>
+      function openLightbox(img) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "none";
+      }
+    </script>
+
+    <script src="../assets/js/CryoEbusL2.js"></script>
+
+    <!-- Contenedor de enfoque (overlay) -->
+    <div class="carousel-focus" id="carouselFocus" aria-hidden="true">
+      <button class="close-focus" id="closeFocus" aria-label="Cerrar">
+        &times;
+      </button>
+      <div class="focus-content"></div>
+    </div>
+  </body>
 </html>

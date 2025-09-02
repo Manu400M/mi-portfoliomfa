@@ -127,6 +127,16 @@ html, body {
     transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
 }
 
+/* Asegura que el contenedor del vídeo pueda posicionar elementos dentro de él */
+#model_viewer {
+    position: relative;
+}
+
+/* Añade una transición suave al vídeo */
+#model_viewer video {
+    transition: opacity 0.5s ease-in-out;
+}
+
 /* --- 5. ESTILO DE LOS CARRUSELES (LATERALES) --- */
 .carousel-container {
     position: relative;

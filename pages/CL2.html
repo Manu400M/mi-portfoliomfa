@@ -1,98 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CryoEBUS Lineal - Dashboard</title>
-    <link rel="stylesheet" href="../css/CryoEBUSL2.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../css/CryoEBUSL2.css" />
+  </head>
+  <body>
     <div class="dashboard">
+      <section class="col-left">
+        <div class="carousel-container">
+          <h2>DISEÑO CAD</h2>
+          <div class="carousel">
+            <img
+              src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/molde traquea iso.png"
+              alt="Imagen de diseño CAD 1"
+              class="active"
+            />
+            <img
+              src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/traquea v3.png"
+              alt="Imagen de diseño CAD 2"
+            />
+            <img
+              src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/traquea v3 explosion.png"
+              alt="Imagen de diseño CAD 3"
+            />
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="carousel-container">
+          <h2>RENDERS</h2>
+          <div class="carousel">
+            <img
+              src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/render cap 2.png"
+              alt="Render del producto 1"
+              class="active"
+            />
+            <!-- <img src="../assets/img/TAVI/rv fluoroscopia.jpg" alt="Render del producto 2"> -->
+            <!-- <img src="https://placehold.co/600x400/5F9EA0/white?text=Render+2" alt="Render del producto 3"> -->
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
 
-        <section class="col-left">
-            <div class="carousel-container">
-                <h2>DISEÑO CAD</h2>
-                <div class="carousel">
-                    <img src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/molde traquea iso.png" alt="Imagen de diseño CAD 1" class="active">
-                    <img src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/traquea v3.png" alt="Imagen de diseño CAD 2">
-                    <img src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/traquea v3 explosion.png" alt="Imagen de diseño CAD 3">
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-            <div class="carousel-container">
-                <h2>RENDERS</h2>
-                <div class="carousel">
-                    <img src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/render cap 2.png" alt="Render del producto 1" class="active">
-                    <!-- <img src="../assets/img/TAVI/rv fluoroscopia.jpg" alt="Render del producto 2"> -->
-                    <!-- <img src="https://placehold.co/600x400/5F9EA0/white?text=Render+2" alt="Render del producto 3"> -->
-
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
+      <section class="col-center">
+        <div class="texto">
+          <div id="link_titulo">
+            <h1>CRYOEBUS LINEAL</h1>
+            <!-- <a id="linkpag" href="/pages/CryoEBUS_Lineal.html">Más Info+</a> -->
+          </div>
+          <div>
+            <h3>DISEÑO</h3>
+            <p>
+              Partiendo de un modelo 3D de tráquea de un paciente real obtenido
+              por segmentación de imágenes TAC (3D slicer), se diseñó un
+              simulador sintético mediante herramientas CAD.
+            </p>
+          </div>
+          <div>
+            <h3>FABRICACIÓN</h3>
+            <p>
+              Tras varias iteraciones de diseño y prototipado, se llegó al
+              modelo definitivo del simulador que se comercializa a nivel global
+              en la actualidad, el cual se encuentra en proceso de patente.
+            </p>
+          </div>
+        </div>
+        <section
+          id="model_viewer"
+          class="main-section"
+          style="
+            width: 100%;
+            height: 600px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <span id="video-loading-message" class="loading-message"></span>
+          <video
+            id="main-video"
+            src="../assets/img/CryoEBUS_Lineal/video curso.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 20px;
+            "
+          ></video>
         </section>
+      </section>
 
-        <section class="col-center">
-            <div class="texto">
-              <div id="link_titulo">
-                <h1>CRYOEBUS LINEAL</h1>
-                <!-- <a id="linkpag" href="/pages/CryoEBUS_Lineal.html">Más Info+</a> -->
-              </div>
-                <div>
-                    <h3>DISEÑO</h3>
-                    <p>Partiendo de un modelo 3D de tráquea de un paciente real obtenido por segmentación de imágenes TAC (3D slicer), se diseñó un simulador sintético mediante herramientas CAD.</p>
-                </div>
-                <div>
-                    <h3>FABRICACIÓN</h3>
-                    <p>Tras varias iteraciones de diseño y prototipado, se llegó al modelo definitivo del simulador que se comercializa a nivel global en la actualidad, el cual se encuentra en proceso de patente.</p>
-                </div>
-            </div>
-            <section id="model_viewer" class="main-section" style="width: 100%; height: 600px; background-color: transparent; display: flex; align-items: center; justify-content: center;">
-    <video src="../assets/img/CryoEBUS_Lineal/video curso.mp4" 
-           autoplay 
-           loop 
-           muted 
-           playsinline 
-           style="width: 100%; height: 100%; object-fit: cover;border-radius:20px;">
-    </video>
-</section>
-             
-        </section>
-
-        <section class="col-right">
-            <div class="carousel-container">
-                <h2>FABRICACIÓN</h2>
-                <div class="carousel">
-                    <img src="../assets/img/CryoEBUS_Lineal/molde v2.jpg" alt="Foto del proceso de fabricación 1" class="active">
-                    <img src="../assets/img/CryoEBUS_Lineal/desmoldeo traquea v2.jpg" alt="Foto del proceso de fabricación 2">
-                    <!-- <img src="../assets/img/CryoEBUS_Lineal/v1 desmoldeo.jpg" alt="Foto del proceso de fabricación 3"> -->
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-            <div class="carousel-container">
-                <h2>IMPLEMENTACIÓN</h2>
-                <div class="carousel">
-                    <img src="../assets/img/CryoEBUS_Lineal/envio.jpg" alt="Foto del simulador en uso 1" class="active">
-                    <img src="../assets/img/CryoEBUS_Lineal/traquea en uso curso.jpg" alt="Foto del simulador en uso 2">
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-
+      <section class="col-right">
+        <div class="carousel-container">
+          <h2>FABRICACIÓN</h2>
+          <div class="carousel">
+            <img
+              src="../assets/img/CryoEBUS_Lineal/molde v2.jpg"
+              alt="Foto del proceso de fabricación 1"
+              class="active"
+            />
+            <img
+              src="../assets/img/CryoEBUS_Lineal/desmoldeo traquea v2.jpg"
+              alt="Foto del proceso de fabricación 2"
+            />
+            <!-- <img src="../assets/img/CryoEBUS_Lineal/v1 desmoldeo.jpg" alt="Foto del proceso de fabricación 3"> -->
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="carousel-container">
+          <h2>IMPLEMENTACIÓN</h2>
+          <div class="carousel">
+            <img
+              src="../assets/img/CryoEBUS_Lineal/envio.jpg"
+              alt="Foto del simulador en uso 1"
+              class="active"
+            />
+            <img
+              src="../assets/img/CryoEBUS_Lineal/traquea en uso curso.jpg"
+              alt="Foto del simulador en uso 2"
+            />
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
     </div>
 
-<script src="../assets/js/CryoEbusL2.js"></script>
+    <script src="../assets/js/CryoEbusL2.js"></script>
 
-<!-- Contenedor de enfoque (overlay) -->
-<div class="carousel-focus" id="carouselFocus" aria-hidden="true">
-  <button class="close-focus" id="closeFocus" aria-label="Cerrar">&times;</button>
-  <div class="focus-content"></div>
-</div>
-
-
-</body>
+    <!-- Contenedor de enfoque (overlay) -->
+    <div class="carousel-focus" id="carouselFocus" aria-hidden="true">
+      <button class="close-focus" id="closeFocus" aria-label="Cerrar">
+        &times;
+      </button>
+      <div class="focus-content"></div>
+    </div>
+  </body>
 </html>
