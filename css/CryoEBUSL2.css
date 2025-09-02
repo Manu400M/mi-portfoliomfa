@@ -82,7 +82,23 @@ html, body {
     border-radius: 12px;
 }
 
+/* --- 4.1 ESTILO VISOR CENTRAL (IMAGEN/3D) --- */
+.modelo-3d {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center;   /* Centra la imagen verticalmente */
+    flex-grow: 1;          /* Permite que el contenedor crezca y ocupe espacio */
+    overflow: hidden;      /* Evita cualquier desbordamiento inesperado */
+    min-height: 300px;     /* Altura mínima para que no colapse si la imagen no carga */
+}
 
+.modelo-3d img {
+    max-width: 100%;      /* La imagen nunca será más ancha que su contenedor */
+    height: auto;         /* La altura se ajusta automáticamente para mantener la proporción */
+    object-fit: contain;  /* Asegura que toda la imagen se vea sin ser cortada */
+    border-radius: 12px;  /* Bordes redondeados para coincidir con el diseño */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra para darle profundidad */
+}
 /* --- 5. ESTILO DE LOS CARRUSELES (LATERALES) --- */
 .carousel-container {
     position: relative;
