@@ -168,5 +168,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- (Aquí puedes mantener la lógica para la imagen si está en la misma página) ---
 
 });
-npm i @vercel/analytics
-import { Analytics } from "@vercel/analytics/next"
+
