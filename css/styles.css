@@ -268,7 +268,7 @@ p, li {
 }
 
 /* Estilo unificado para todas las "tarjetas" del CV */
-.experiencia-educacion, #habilidades, #herramientas {
+.experiencia-educacion, #habilidades, #herramientas, .tarjeta-cv {
   background-color: #f9fafd;
   padding: 20px;
   border-radius: 12px;
@@ -276,7 +276,7 @@ p, li {
 }
 
 /* Estilo unificado para los títulos de las tarjetas del CV */
-.experiencia-educacion h2, #habilidades h2, #herramientas h2, #certificaciones h2 {
+.experiencia-educacion h2, #habilidades h2, #herramientas h2, .tarjeta-cv h2, #certificaciones h2 {
   color: white;
   background-color: var(--rojo-oscuro);
   padding: 10px 15px;
@@ -302,10 +302,10 @@ p, li {
 }
 
 #habilidades > ul > li {
-  font-weight: bold;
+  font-weight: normal;
 }
 
-#habilidades > ul > ul {
+#habilidades > ul > li > ul {
   padding-left: 20px;
   margin-top: 0.5rem;
   list-style: disc;
@@ -493,19 +493,19 @@ p, li {
   gap: 1.5rem;
 }
 
-div[id="col izq"], div[id="col der"] {
+.col-contacto {
   display: flex;
   flex-direction: column;
 }
 
-#img-izq img, #transparente {
+#img-izq img, .transparente {
   width: 300px;  /* Ancho fijo para las imágenes y espaciadores */
   height: 250px; /* Alto fijo */
   object-fit: cover;
   border-radius: 12px;
 }
 
-#transparente {
+.transparente {
   background: transparent; /* Aseguramos que es invisible */
 }
 
@@ -740,4 +740,27 @@ div[id="col izq"], div[id="col der"] {
     flex-direction: column;
     justify-content: center;
   }
+}
+/* Experiencia profesional: jerarquía y separación con la paleta existente. */
+html { scroll-padding-top: 76px; }
+#welcome-section { position: relative; padding-top: 5rem; }
+.hero-enfoque { color: var(--blanco); max-width: 42rem; margin: 0.75rem auto 0; }
+#columna-1, #columna-2, .cert-info { min-width: 0; }
+.experiencia-item { padding-left: 1rem; border-left: 3px solid var(--azul-oscuro); }
+.experiencia-item + .experiencia-item { margin-top: 1.75rem; }
+.experiencia-item h3 { color: var(--rojo-oscuro); font-size: 1.15rem; line-height: 1.4; }
+.experiencia-empresa { font-weight: bold; margin-top: 0.35rem; }
+.experiencia-fecha { font-size: 0.9rem; margin-bottom: 0.75rem; }
+.cert-info, .welcome-contact-box a { overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--azul-oscuro); outline-offset: 4px; }
+@media (max-width: 768px) {
+  #welcome-section { gap: 2rem; }
+  .welcome-contact-box { min-width: 0; width: 100%; max-width: 28rem; padding: 1.5rem; }
+  .welcome-contact-box .contact-list li { font-size: 1rem; }
+  #contenedor-sobremi { padding: 1.5rem; }
+  #sobremi-section p { text-align: left; }
+  .contenedor-cv { padding: 0; }
+  .experiencia-educacion, #habilidades, #herramientas, .tarjeta-cv { padding: 1rem; }
+  .cert-logo { flex-shrink: 0; width: 36px; height: 36px; margin-right: 10px; }
+  .footer-about, .footer-links, .footer-social { min-width: 0; width: 100%; }
 }
