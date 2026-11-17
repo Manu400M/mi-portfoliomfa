@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Verificación conceptual de información CAD e IFC</title>
+  <desc id="desc">Un conjunto mecánico esquemático en vista explosionada junto a una revisión de geometría y propiedades. Ilustración original sin datos de proyecto.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#0b1828"/><stop offset="1" stop-color="#173b49"/></linearGradient>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#224b59"/><stop offset="1" stop-color="#142e3d"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#7aa3ad" stroke-opacity=".1" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1200" height="720" fill="url(#background)"/>
+  <rect width="1200" height="720" fill="url(#grid)"/>
+  <g fill="none" stroke="#4f7e89" stroke-width="2" stroke-dasharray="7 11">
+    <path d="M205 283V546M449 241V505M615 307V574"/>
+    <path d="M131 545L429 650L683 532" stroke-opacity=".5"/>
+  </g>
+  <g stroke="#76b7bd" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M177 501L417 394L638 479L397 591Z" fill="url(#surface)"/>
+    <path d="M177 501V527L397 618V591Z" fill="#193d4d"/>
+    <path d="M397 591V618L638 505V479Z" fill="#102a3a"/>
+    <path d="M232 361L409 282L579 345L401 426Z" fill="#2a5b65"/>
+    <path d="M232 361V391L401 459V426Z" fill="#254a58"/>
+    <path d="M401 426V459L579 376V345Z" fill="#153747"/>
+    <path d="M235 246L417 165L582 227L399 309Z" fill="#3e7d81"/>
+    <path d="M235 246V270L399 336V309Z" fill="#2c626b"/>
+    <path d="M399 309V336L582 254V227Z" fill="#1c4757"/>
+    <ellipse cx="410" cy="241" rx="57" ry="25" transform="rotate(-4 410 241)" fill="#142f3f"/>
+    <ellipse cx="407" cy="355" rx="41" ry="18" transform="rotate(-4 407 355)" fill="#142f3f"/>
+    <ellipse cx="405" cy="503" rx="43" ry="18" transform="rotate(-4 405 503)" fill="#0b2535"/>
+  </g>
+  <g fill="#8bd8cd" stroke="#172f3f" stroke-width="2">
+    <ellipse cx="267" cy="248" rx="10" ry="5"/><ellipse cx="418" cy="183" rx="10" ry="5"/>
+    <ellipse cx="548" cy="230" rx="10" ry="5"/><ellipse cx="400" cy="295" rx="10" ry="5"/>
+    <ellipse cx="220" cy="504" rx="10" ry="5"/><ellipse cx="417" cy="417" rx="10" ry="5"/>
+    <ellipse cx="593" cy="481" rx="10" ry="5"/><ellipse cx="397" cy="572" rx="10" ry="5"/>
+  </g>
+  <path d="M627 347H719" fill="none" stroke="#87d8cc" stroke-width="3"/>
+  <path d="M705 334L719 347L705 360" fill="none" stroke="#87d8cc" stroke-width="3"/>
+  <rect x="764" y="172" width="320" height="354" rx="14" fill="#102a3a" stroke="#4b7481" stroke-width="2"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="802" y="224" fill="#ecf6f7" font-size="30" font-weight="600">CAD / IFC</text>
+    <path d="M802 252H1045" stroke="#355c6b" stroke-width="2"/>
+    <g fill="#b9d5da" font-size="25">
+      <text x="802" y="307">Geometría</text><text x="802" y="377">Propiedades</text><text x="802" y="447">Revisión</text>
+    </g>
+    <g fill="none" stroke="#8bd8cd" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1000 296L1010 306L1029 285"/><path d="M1000 366L1010 376L1029 355"/>
+      <circle cx="1014" cy="437" r="16" stroke="#8ea8b1"/>
+    </g>
+    <text x="82" y="87" fill="#98d9d0" font-size="17" letter-spacing="3">VERIFICACIÓN DE INFORMACIÓN</text>
+    <text x="82" y="661" fill="#a3bcc6" font-size="17" letter-spacing="1.4">ILUSTRACIÓN CONCEPTUAL · SIN DATOS DE PROYECTO</text>
+  </g>
+</svg>
