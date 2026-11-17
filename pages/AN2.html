@@ -1,277 +1,212 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CryoEBUS Lineal - Dashboard</title>
-    <link rel="stylesheet" href="../css/CryoEBUSL2.css" />
-  </head>
-  <body>
-    <div class="dashboard">
-      <section class="col-left">
-        <div class="carousel-container">
-          <h2>DISEÑO CAD</h2>
-          <div class="carousel">
-            <img
-              src="../assets/img/Capturas porfolio/Nasofaringe/alzado cabeza v1.png"
-              alt="Imagen de diseño CAD 1"
-              class="active"
-            />
-            <img
-              src="../assets/img/Capturas porfolio/Nasofaringe/perfil cabeza v1.png"
-              alt="Imagen de diseño CAD 2"
-            />
-            <img
-              src="../assets/img/Capturas porfolio/Nasofaringe/perfil moldes v1.png"
-              alt="Imagen de diseño CAD 3"
-            />
-            <img
-              src="../assets/img/Capturas porfolio/Nasofaringe/ensamblaje cabeza traquea cad frontal.png"
-              alt="Imagen de diseño CAD 4"
-            />
-            <img
-              src="../assets/img/Capturas porfolio/Nasofaringe/cabeza v3.png"
-              alt="Imagen de diseño CAD 1"
-              class="active"
-            />
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nasofaringe | Manuel Fernández Álvarez</title>
+  <meta name="description" content="Diseño de un simulador anatómico de vía aérea, desarrollado en versiones modular e integrada para entrenamiento médico." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/hvv-projects.css" />
+  <script defer src="../assets/js/hvv-projects.js"></script>
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#project-main">Ir al contenido</a>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html"><span class="symbol">M·F</span><span>Manuel Fernández Álvarez</span></a>
+      <nav class="navlinks" aria-label="Navegación del proyecto">
+        <a href="../index.html#medical-projects">Todos los proyectos</a>
+        <a href="#development">Desarrollo</a>
+        <a href="#gallery">Galería</a>
+      </nav>
+    </div>
+  </header>
+  <main id="project-main">
+    <section class="project-hero">
+      <div class="container project-intro">
+        <div>
+          <a class="project-back" href="../index.html#medical-projects">← Proyectos de HVV</a>
+          <p class="kicker">Hospital Virtual Valdecilla</p>
+          <h1>Nasofaringe</h1>
+          <p class="project-subtitle">Simulador de vía aérea</p>
+          <p class="project-summary">Diseño de un simulador anatómico de vía aérea, desarrollado en versiones modular e integrada para entrenamiento médico.</p>
+          <a class="btn primary" href="#gallery">Ver imágenes <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="carousel-container">
-          <h2>RENDERS</h2>
-          <div class="carousel">
-            <img
-              src="../assets/img/Acceso Nasofaringe/nasorender.png"
-              alt="Render del producto 1"
-              class="active"
-            />
-            <!-- <img src="../assets/img/img_portfolio/Cardiologia/braquial 1.png" alt="Render del producto 2"> -->
-            <!-- <img src="../assets/img/img_portfolio/Cardiologia/braquial 3.png" alt="Render del producto 3"> -->
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
+        <figure class="project-hero-image">
+          <img src="../assets/img/Acceso Nasofaringe/cabeza v1 manta rosa.jpg" alt="Simulador de vía aérea" width="1000" height="800" />
+        </figure>
+      </div>
+    </section>
+    <div class="container project-body">
+      <section class="project-contribution" aria-labelledby="contribution-title">
+        <div><div class="kicker">TRABAJO REALIZADO</div><h2 id="contribution-title">Mi aportación</h2></div>
+        <ul>
+            <li>Diseño de las cavidades nasal y bucal, cuerdas vocales y tramos iniciales de tráquea y esófago.</li>
+            <li>Desarrollo de una versión modular de tres piezas intercambiables y una versión integrada.</li>
+            <li>Fabricación de prototipos mediante impresión 3D y moldeado por inyección.</li>
+        </ul>
       </section>
-
-      <section class="col-center">
-        <div class="texto">
-          <div id="link_titulo">
-            <h1>NASOFARINGE</h1>
-            <!-- <a id="linkpag" href="/pages/Acceso_Nasofaringe.html">Más Info+</a> -->
-          </div>
-          <div>
-            <h3>DISEÑO</h3>
-            <p>
-              Partiendo de un modelo anatómico real de la cavidad nasal, se
-              diseñó un simulador de vía aérea que incluye cavidad nasal, bucal,
-              cuerdas vocales; y el inicial de la tráquea y el esófago. Se
-              desarrollaron varias versiones, en primer lugar; una versión
-              modular compuesta por tres piezas intercambiables, y por otro
-              lado; una versión unificada con movimiento de epiglotis mediante
-              actuador lineal y colapso de la cavidad mediante presión positiva
-              en cámara de aire.
-            </p>
-          </div>
-          <div>
-            <h3>FABRICACIÓN</h3>
-            <p>
-              Se fabricaron sendos prototipos mediante impresión 3D y moldeado
-              por inyección que se emplean actualmente en cursos de neumología y
-              digestivo.
-            </p>
-          </div>
+      <div class="project-story" id="development">
+        <section><h2>Objetivo</h2><p>Desarrollar un simulador de vía aérea a partir de un modelo anatómico real de la cavidad nasal.</p></section>
+        <section><h2>Diseño y versiones</h2><p>La versión modular se compuso de tres piezas intercambiables. La versión integrada incorporó movimiento de la epiglotis mediante un actuador lineal y colapso de la cavidad mediante presión positiva en una cámara de aire.</p></section>
+        <section><h2>Prototipado y fabricación</h2><p>Se fabricaron prototipos mediante impresión 3D y moldeado por inyección. La galería recoge el diseño de piezas y moldes, su fabricación y el ensamblaje.</p></section>
+        <section><h2>Uso del simulador</h2><p>Los prototipos se utilizaron en cursos de neumología y digestivo. El vídeo permite observar el recorrido por el simulador.</p></section>
+      </div>
+      <section class="project-gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="kicker">DEL MODELO AL PROTOTIPO</div>
+        <h2 id="gallery-title">Galería del proyecto</h2>
+        <div class="gallery-tabs" aria-label="Categorías de imágenes">
+          <button type="button" id="tab-0" aria-controls="gallery-0">Diseño CAD</button>
+          <button type="button" id="tab-1" aria-controls="gallery-1">Renders</button>
+          <button type="button" id="tab-2" aria-controls="gallery-2">Fabricación</button>
+          <button type="button" id="tab-3" aria-controls="gallery-3">Uso del simulador</button>
         </div>
-        <section
-          id="model_viewer"
-          class="main-section"
-          style="
-            width: 100%;
-            height: 600px;
-            background-color: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          "
-        >
-          <span id="video-loading-message" class="loading-message"></span>
-          <video
-            id="main-video"
-            src="../assets/vid/entrada cabeza.mp4"
-            autoplay
-            loop
-            muted
-            playsinline
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border-radius: 20px;
-            "
-          ></video>
+        <section class="gallery-panel" id="gallery-0" aria-labelledby="tab-0">
+          <h3>Diseño CAD</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Vista frontal del modelo">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/Nasofaringe/alzado cabeza v1.png" alt="Vista frontal del modelo" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Vista frontal del modelo</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Vista lateral del modelo">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/Nasofaringe/perfil cabeza v1.png" alt="Vista lateral del modelo" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Vista lateral del modelo</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Diseño de los moldes">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/Nasofaringe/perfil moldes v1.png" alt="Diseño de los moldes" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Diseño de los moldes</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Ensamblaje de cabeza y tráquea">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/Nasofaringe/ensamblaje cabeza traquea cad frontal.png" alt="Ensamblaje de cabeza y tráquea" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Ensamblaje de cabeza y tráquea</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Diseño de la cabeza · versión 3">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/Nasofaringe/cabeza v3.png" alt="Diseño de la cabeza · versión 3" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Diseño de la cabeza · versión 3</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-1" aria-labelledby="tab-1">
+          <h3>Renders</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Render del simulador">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/nasorender.png" alt="Render del simulador" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Render del simulador</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-2" aria-labelledby="tab-2">
+          <h3>Fabricación</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Impresión de la cabeza">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/impresion cabeza.jpg" alt="Impresión de la cabeza" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Impresión de la cabeza</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Molde de la nariz">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/molde nariz.jpg" alt="Molde de la nariz" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Molde de la nariz</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Primer prototipo de la cabeza">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/cabeza v1 manta rosa.jpg" alt="Primer prototipo de la cabeza" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Primer prototipo de la cabeza</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Moldes · versión 3">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/moldes naso v3.jpg" alt="Moldes · versión 3" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Moldes · versión 3</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Fabricación del simulador · versión 3">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/fabricacion nasofa v3.jpg" alt="Fabricación del simulador · versión 3" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Fabricación del simulador · versión 3</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-3" aria-labelledby="tab-3">
+          <h3>Uso del simulador</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Ensamblaje de cabeza y tráquea">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/ensamblaje cabeza traquea horizontal.jpg" alt="Ensamblaje de cabeza y tráquea" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Ensamblaje de cabeza y tráquea</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Prototipo de cabeza">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/cabeza v1 horizontal.jpg" alt="Prototipo de cabeza" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Prototipo de cabeza</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Simulador durante un curso">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/naso v3 curso.jpg" alt="Simulador durante un curso" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Simulador durante un curso</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Ensamblaje · versión 3">
+              <img loading="lazy" src="../assets/img/Acceso Nasofaringe/naso v3 ensamblaje.jpg" alt="Ensamblaje · versión 3" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Ensamblaje · versión 3</figcaption>
+          </figure>
+          </div>
         </section>
       </section>
-
-      <section class="col-right">
-        <div class="carousel-container">
-          <h2>FABRICACIÓN</h2>
-          <div class="carousel">
-            <img
-              src="../assets/img/Acceso Nasofaringe/impresion cabeza.jpg"
-              alt="Foto del proceso de fabricación 1"
-              class="active"
-            />
-            <img
-              src="../assets/img/Acceso Nasofaringe/molde nariz.jpg"
-              alt="Foto del proceso de fabricación 2"
-            />
-            <img
-              src="../assets/img/Acceso Nasofaringe/cabeza v1 manta rosa.jpg"
-              alt="Foto del proceso de fabricación 3"
-            />
-            <img
-              src="../assets/img/Acceso Nasofaringe/moldes naso v3.jpg"
-              alt="Imagen de diseño CAD 1"
-              class="active"
-            />
-            <img
-              src="../assets/img/Acceso Nasofaringe/fabricacion nasofa v3.jpg"
-              alt="Imagen de diseño CAD 1"
-              class="active"
-            />
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-        <div class="carousel-container">
-          <h2>IMPLEMENTACIÓN</h2>
-          <div class="carousel">
-            <img
-              src="../assets/img/Acceso Nasofaringe/ensamblaje cabeza traquea horizontal.jpg"
-              alt="Foto del simulador en uso 1"
-              class="active"
-            />
-            <img
-              src="../assets/img/Acceso Nasofaringe/cabeza v1 horizontal.jpg"
-              alt="Foto del simulador en uso 2"
-            />
-            <img
-              src="../assets/img/Acceso Nasofaringe/naso v3 curso.jpg"
-              alt="Imagen de diseño CAD 1"
-              class="active"
-            />
-            <img
-              src="../assets/img/Acceso Nasofaringe/naso v3 ensamblaje.jpg"
-              alt="Imagen de diseño CAD 1"
-              class="active"
-            />
-            <!-- <img src="../assets/img/Acceso_Braquial/" alt="Foto del simulador en uso 2"> -->
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
+      <section class="project-video" id="video" aria-labelledby="video-title">
+        <div class="kicker">EL SIMULADOR EN USO</div>
+        <h2 id="video-title">Vídeo del proyecto</h2>
+        <video controls playsinline preload="none" poster="../assets/img/Acceso Nasofaringe/cabeza v1 manta rosa.jpg" aria-label="Vídeo del simulador Nasofaringe">
+          <source src="../assets/vid/entrada cabeza.mp4" type="video/mp4" />
+          Tu navegador no puede reproducir este vídeo.
+        </video>
+        <p><a href="../assets/vid/entrada cabeza.mp4" target="_blank" rel="noopener noreferrer">Abrir el vídeo en otra pestaña</a></p>
       </section>
+      <nav class="project-pagination" aria-label="Otros proyectos">
+        <a href="../index.html#medical-projects">← Todos los proyectos</a>
+        <a href="./CR2.html">Siguiente: EBUS Radial →</a>
+      </nav>
     </div>
-
-    <!-- Babylon.js core y loader para GLTF -->
-    <script src="https://cdn.babylonjs.com/babylon.js"></script>
-    <script src="https://cdn.babylonjs.com/loaders/babylon.glTF2FileLoader.min.js"></script>
-
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        const canvas = document.getElementById("babylon-canvas");
-        const engine = new BABYLON.Engine(canvas, true);
-
-        const createScene = function () {
-          const scene = new BABYLON.Scene(engine);
-          scene.clearColor = new BABYLON.Color4(0.27, 0.27, 0.27, 1);
-
-          // Cámara tipo Google Maps 3D
-          const camera = new BABYLON.ArcRotateCamera(
-            "camera",
-            -Math.PI / 2,
-            Math.PI / 2.5,
-            5,
-            BABYLON.Vector3.Zero(),
-            scene
-          );
-          camera.attachControl(canvas, true); // 🟢 Habilita movimiento con el mouse
-          camera.useAutoRotationBehavior = false;
-
-          camera.panningSensibility = 50; // Movimiento lateral (click derecho o ctrl+click)
-          camera.wheelDeltaPercentage = 0.01; // Zoom suave
-          camera.lowerRadiusLimit = 0.2; // Límite de zoom mínimo
-          camera.upperRadiusLimit = 20; // Límite de zoom máximo
-
-          const light = new BABYLON.HemisphericLight(
-            "light",
-            new BABYLON.Vector3(0, 1, 0),
-            scene
-          );
-          light.intensity = 1.2;
-
-          BABYLON.SceneLoader.Append(
-            "../assets/3D/",
-            "ABR2.glb",
-            scene,
-            function () {
-              console.log("✅ Modelo cargado correctamente");
-
-              const meshes = scene.meshes;
-              const root =
-                meshes.find((m) => m.name !== "__root__") || scene.meshes[0];
-
-              // Centrar cámara en el modelo
-              if (root) {
-                camera.target = root.getBoundingInfo().boundingBox.centerWorld;
-
-                // Auto escala si es pequeño
-                const size = root
-                  .getBoundingInfo()
-                  .boundingBox.extendSizeWorld.length();
-                if (size < 0.5) {
-                  root.scaling.scaleInPlace(1 / size);
-                }
-              }
-            },
-            null,
-            function (_, message) {
-              console.error("❌ Error al cargar el modelo:", message);
-            }
-          );
-
-          return scene;
-        };
-
-        const scene = createScene();
-        engine.runRenderLoop(() => scene.render());
-
-        window.addEventListener("resize", () => engine.resize());
-      });
-    </script>
-
-    <script>
-      function openLightbox(img) {
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImg = document.getElementById("lightbox-img");
-        lightbox.style.display = "flex";
-        lightboxImg.src = img.src;
-      }
-
-      function closeLightbox() {
-        const lightbox = document.getElementById("lightbox");
-        lightbox.style.display = "none";
-      }
-    </script>
-
-    <script src="../assets/js/CryoEbusL2.js"></script>
-
-    <!-- Contenedor de enfoque (overlay) -->
-    <div class="carousel-focus" id="carouselFocus" aria-hidden="true">
-      <button class="close-focus" id="closeFocus" aria-label="Cerrar">
-        &times;
-      </button>
-      <div class="focus-content"></div>
-    </div>
-  </body>
+  </main>
+  <footer class="project-footer"><div class="container"><p>Manuel Fernández Álvarez · Portfolio de ingeniería</p><a href="mailto:manuelffedezal@gmail.com">Contacto →</a></div></footer>
+  <dialog class="image-dialog" aria-label="Imagen ampliada del proyecto">
+    <div class="dialog-toolbar"><p class="dialog-caption" aria-live="polite"></p><button class="dialog-close" type="button" aria-label="Cerrar imagen ampliada">Cerrar ×</button></div>
+    <img class="dialog-image" alt="" />
+    <div class="dialog-controls"><button class="dialog-prev" type="button">← Anterior</button><p class="dialog-count" aria-live="polite"></p><button class="dialog-next" type="button">Siguiente →</button></div>
+  </dialog>
+</body>
 </html>

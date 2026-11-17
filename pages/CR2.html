@@ -1,179 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryoEBUS Lineal - Dashboard</title>
-    <link rel="stylesheet" href="../css/CryoEBUSL2.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EBUS Radial | Manuel Fernández Álvarez</title>
+  <meta name="description" content="Desarrollo de un bloque pulmonar sintético modular, con tres prototipos para comprobar el diseño y el proceso de fabricación." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/hvv-projects.css" />
+  <script defer src="../assets/js/hvv-projects.js"></script>
 </head>
-<body>
-
-    <div class="dashboard">
-
-        <section class="col-left">
-            <div class="carousel-container">
-                <h2>DISEÑO CAD</h2>
-                <div class="carousel">
-                    <img src="../assets/img/Capturas porfolio/Radial/moldes radial def.png" alt="Imagen de diseño CAD 1" class="active">
-                    <img src="../assets/img/Capturas porfolio/Radial/resultados radial def.png" alt="Imagen de diseño CAD 2">
-                    <img src="../assets/img/Capturas porfolio/Radial/tráquea cad.png" alt="Imagen de diseño CAD 3">
-
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-            <div class="carousel-container">
-                <h2>RENDERS</h2>
-                <div class="carousel">
-                    <img src="../assets/img/img_portfolio/Neumologia/radial.png" alt="Render del producto 1" class="active">
-                    <img src="../assets/img/img_portfolio/Neumologia/radial 2.png" alt="Render del producto 2">
-
-
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-
-        <section class="col-center">
-            <div class="texto">
-                <div id="link_titulo">
-                <h1>CRYOEBUS RADIAL</h1>
-                <!-- <a id="linkpag" href="/pages/EBUS_Radial.html">Más Info+</a> -->
-              </div>
-                <div>
-                    <h3>DISEÑO</h3>
-                    <p>Se diseñó un simulador modular de bloque pulmonar completo a partir de un modelo 3D modificado de un paciente real. Se desarrollaron tres prototipos para validar tanto el diseño como el proceso de fabricación.</p>
-                </div>
-                <div>
-                    <h3>FABRICACIÓN</h3>
-                    <p>Una vez validado, se fabricaron varios modelos mediante impresión 3D e inyección a núcleo perdido, siendo comercializados a nivel europeo.</p>
-                </div>
-            </div>
-            <div class="modelo-3d" >
-                <section id="model_viewer" class="main-section" style="width: 100%; height: 600px; background-color: transparent; display: flex; align-items: center; justify-content: center;">
-            <span id="video-loading-message" class="loading-message"></span>
-                  <video id="main-video" src="../assets/vid/video ruta radial.mp4" 
-                autoplay 
-                loop 
-                muted 
-                playsinline 
-                style="width: 100%; height: 100%; object-fit: cover;border-radius:20px;">
-             </video>
-            </div>
-             
-        </section>
-
-        <section class="col-right">
-            <div class="carousel-container">
-                <h2>FABRICACIÓN</h2>
-                <div class="carousel">
-                        <img src="../assets/img/Radial prototipo/radial v1 molde.jpg" alt="Foto del proceso de fabricación 1" class="active">
-                    <img src="../assets/img/Radial prototipo/radial v1 inyección.jpg" alt="Foto del proceso de fabricación 2">
-                    <img src="../assets/img/Radial prototipo/radial v2 molde.jpg" alt="Foto del proceso de fabricación 3">
-                    <img src="../assets/img/Radial prototipo/radial v3 inyeccion.jpg" alt="Foto del proceso de fabricación 3">
-
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-            <div class="carousel-container">
-                <h2>IMPLEMENTACIÓN</h2>
-                <div class="carousel">
-                    <img src="../assets/img/Radial prototipo/radial v2 prueba.jpg" alt="Foto del simulador en uso 1" class="active">
-                    <img src="../assets/img/Radial prototipo/radial v3 prueba.jpg" alt="Foto del simulador en uso 2">
-
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-
+<body class="project-page">
+  <a class="skip-link" href="#project-main">Ir al contenido</a>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html"><span class="symbol">M·F</span><span>Manuel Fernández Álvarez</span></a>
+      <nav class="navlinks" aria-label="Navegación del proyecto">
+        <a href="../index.html#medical-projects">Todos los proyectos</a>
+        <a href="#development">Desarrollo</a>
+        <a href="#gallery">Galería</a>
+      </nav>
     </div>
-
-    <!-- Babylon.js core y loader para GLTF -->
-<script src="https://cdn.babylonjs.com/babylon.js"></script>
-<script src="https://cdn.babylonjs.com/loaders/babylon.glTF2FileLoader.min.js"></script>
-
-<script>
-  window.addEventListener('DOMContentLoaded', function () {
-    const canvas = document.getElementById("babylon-canvas");
-    const engine = new BABYLON.Engine(canvas, true);
-
-    const createScene = function () {
-      const scene = new BABYLON.Scene(engine);
-      scene.clearColor = new BABYLON.Color4(0.27, 0.27, 0.27, 1);
-
-      // Cámara tipo Google Maps 3D
-      const camera = new BABYLON.ArcRotateCamera("camera",
-        -Math.PI / 2, Math.PI / 2.5,
-        5,
-        BABYLON.Vector3.Zero(),
-        scene
-      );
-      camera.attachControl(canvas, true); // 🟢 Habilita movimiento con el mouse
-      camera.useAutoRotationBehavior = false;
-
-      camera.panningSensibility = 50;      // Movimiento lateral (click derecho o ctrl+click)
-      camera.wheelDeltaPercentage = 0.01;  // Zoom suave
-      camera.lowerRadiusLimit = 0.2;       // Límite de zoom mínimo
-      camera.upperRadiusLimit = 20;        // Límite de zoom máximo
-
-      const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
-      light.intensity = 1.2;
-
-      BABYLON.SceneLoader.Append("../assets/3D/", "ABR2.glb", scene, function () {
-        console.log("✅ Modelo cargado correctamente");
-
-        const meshes = scene.meshes;
-        const root = meshes.find(m => m.name !== "__root__") || scene.meshes[0];
-
-        // Centrar cámara en el modelo
-        if (root) {
-          camera.target = root.getBoundingInfo().boundingBox.centerWorld;
-
-          // Auto escala si es pequeño
-          const size = root.getBoundingInfo().boundingBox.extendSizeWorld.length();
-          if (size < 0.5) {
-            root.scaling.scaleInPlace(1 / size);
-          }
-        }
-      }, null, function (_, message) {
-        console.error("❌ Error al cargar el modelo:", message);
-      });
-
-      return scene;
-    };
-
-    const scene = createScene();
-    engine.runRenderLoop(() => scene.render());
-
-    window.addEventListener("resize", () => engine.resize());
-  });
-</script>
-
-    <script>
-  function openLightbox(img) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    lightbox.style.display = 'flex';
-    lightboxImg.src = img.src;
-  }
-
-  function closeLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    lightbox.style.display = 'none';
-  }
-</script>
-
-<script src="../assets/js/CryoEbusL2.js"></script>
-
-<!-- Contenedor de enfoque (overlay) -->
-<div class="carousel-focus" id="carouselFocus" aria-hidden="true">
-  <button class="close-focus" id="closeFocus" aria-label="Cerrar">&times;</button>
-  <div class="focus-content"></div>
-</div>
-
-
+  </header>
+  <main id="project-main">
+    <section class="project-hero">
+      <div class="container project-intro">
+        <div>
+          <a class="project-back" href="../index.html#medical-projects">← Proyectos de HVV</a>
+          <p class="kicker">Hospital Virtual Valdecilla</p>
+          <h1>EBUS Radial</h1>
+          <p class="project-subtitle">Simulador modular de bloque pulmonar</p>
+          <p class="project-summary">Desarrollo de un bloque pulmonar sintético modular, con tres prototipos para comprobar el diseño y el proceso de fabricación.</p>
+          <a class="btn primary" href="#gallery">Ver imágenes <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="project-hero-image">
+          <img src="../assets/img/Radial prototipo/radial v3 prueba.jpg" alt="Simulador modular de bloque pulmonar" width="1000" height="800" />
+        </figure>
+      </div>
+    </section>
+    <div class="container project-body">
+      <section class="project-contribution" aria-labelledby="contribution-title">
+        <div><div class="kicker">TRABAJO REALIZADO</div><h2 id="contribution-title">Mi aportación</h2></div>
+        <ul>
+            <li>Diseño de un simulador modular a partir de un modelo 3D modificado de un paciente real.</li>
+            <li>Desarrollo de tres prototipos para validar el diseño y la fabricación.</li>
+            <li>Fabricación mediante impresión 3D e inyección a núcleo perdido.</li>
+        </ul>
+      </section>
+      <div class="project-story" id="development">
+        <section><h2>Objetivo</h2><p>Reproducir un bloque pulmonar completo en un simulador modular para entrenamiento EBUS radial.</p></section>
+        <section><h2>Diseño</h2><p>Se partió de un modelo 3D de un paciente real, modificado para desarrollar la geometría del simulador y sus moldes.</p></section>
+        <section><h2>Prototipado y fabricación</h2><p>Se desarrollaron tres prototipos para validar tanto el diseño como el proceso de fabricación. Tras las pruebas se fabricaron modelos mediante impresión 3D e inyección a núcleo perdido.</p></section>
+        <section><h2>Pruebas</h2><p>Las fotografías muestran pruebas de las versiones del simulador. El vídeo documenta el recorrido a través del modelo.</p></section>
+      </div>
+      <section class="project-gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="kicker">DEL MODELO AL PROTOTIPO</div>
+        <h2 id="gallery-title">Galería del proyecto</h2>
+        <div class="gallery-tabs" aria-label="Categorías de imágenes">
+          <button type="button" id="tab-0" aria-controls="gallery-0">Diseño CAD</button>
+          <button type="button" id="tab-1" aria-controls="gallery-1">Renders</button>
+          <button type="button" id="tab-2" aria-controls="gallery-2">Fabricación</button>
+          <button type="button" id="tab-3" aria-controls="gallery-3">Uso del simulador</button>
+        </div>
+        <section class="gallery-panel" id="gallery-0" aria-labelledby="tab-0">
+          <h3>Diseño CAD</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Moldes del simulador">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/Radial/moldes radial def.png" alt="Moldes del simulador" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Moldes del simulador</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Diseño del simulador">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/Radial/resultados radial def.png" alt="Diseño del simulador" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Diseño del simulador</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Geometría de la tráquea">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/Radial/tráquea cad.png" alt="Geometría de la tráquea" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Geometría de la tráquea</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-1" aria-labelledby="tab-1">
+          <h3>Renders</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Render del simulador · vista 1">
+              <img loading="lazy" src="../assets/img/img_portfolio/Neumologia/radial.png" alt="Render del simulador · vista 1" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Render del simulador · vista 1</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Render del simulador · vista 2">
+              <img loading="lazy" src="../assets/img/img_portfolio/Neumologia/radial 2.png" alt="Render del simulador · vista 2" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Render del simulador · vista 2</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-2" aria-labelledby="tab-2">
+          <h3>Fabricación</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Molde del primer prototipo">
+              <img loading="lazy" src="../assets/img/Radial prototipo/radial v1 molde.jpg" alt="Molde del primer prototipo" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Molde del primer prototipo</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Inyección del primer prototipo">
+              <img loading="lazy" src="../assets/img/Radial prototipo/radial v1 inyección.jpg" alt="Inyección del primer prototipo" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Inyección del primer prototipo</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Molde del segundo prototipo">
+              <img loading="lazy" src="../assets/img/Radial prototipo/radial v2 molde.jpg" alt="Molde del segundo prototipo" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Molde del segundo prototipo</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Inyección del tercer prototipo">
+              <img loading="lazy" src="../assets/img/Radial prototipo/radial v3 inyeccion.jpg" alt="Inyección del tercer prototipo" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Inyección del tercer prototipo</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-3" aria-labelledby="tab-3">
+          <h3>Uso del simulador</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Prueba del segundo prototipo">
+              <img loading="lazy" src="../assets/img/Radial prototipo/radial v2 prueba.jpg" alt="Prueba del segundo prototipo" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Prueba del segundo prototipo</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Prueba del tercer prototipo">
+              <img loading="lazy" src="../assets/img/Radial prototipo/radial v3 prueba.jpg" alt="Prueba del tercer prototipo" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Prueba del tercer prototipo</figcaption>
+          </figure>
+          </div>
+        </section>
+      </section>
+      <section class="project-video" id="video" aria-labelledby="video-title">
+        <div class="kicker">EL SIMULADOR EN USO</div>
+        <h2 id="video-title">Vídeo del proyecto</h2>
+        <video controls playsinline preload="none" poster="../assets/img/Radial prototipo/radial v3 prueba.jpg" aria-label="Vídeo del simulador EBUS Radial">
+          <source src="../assets/vid/video ruta radial.mp4" type="video/mp4" />
+          Tu navegador no puede reproducir este vídeo.
+        </video>
+        <p><a href="../assets/vid/video ruta radial.mp4" target="_blank" rel="noopener noreferrer">Abrir el vídeo en otra pestaña</a></p>
+      </section>
+      <nav class="project-pagination" aria-label="Otros proyectos">
+        <a href="../index.html#medical-projects">← Todos los proyectos</a>
+        <a href="./AB2.html">Siguiente: Acceso braquial →</a>
+      </nav>
+    </div>
+  </main>
+  <footer class="project-footer"><div class="container"><p>Manuel Fernández Álvarez · Portfolio de ingeniería</p><a href="mailto:manuelffedezal@gmail.com">Contacto →</a></div></footer>
+  <dialog class="image-dialog" aria-label="Imagen ampliada del proyecto">
+    <div class="dialog-toolbar"><p class="dialog-caption" aria-live="polite"></p><button class="dialog-close" type="button" aria-label="Cerrar imagen ampliada">Cerrar ×</button></div>
+    <img class="dialog-image" alt="" />
+    <div class="dialog-controls"><button class="dialog-prev" type="button">← Anterior</button><p class="dialog-count" aria-live="polite"></p><button class="dialog-next" type="button">Siguiente →</button></div>
+  </dialog>
 </body>
 </html>

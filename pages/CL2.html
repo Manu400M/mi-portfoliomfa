@@ -1,153 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CryoEBUS Lineal - Dashboard</title>
-    <link rel="stylesheet" href="../css/CryoEBUSL2.css" />
-  </head>
-  <body>
-    <div class="dashboard">
-      <section class="col-left">
-        <div class="carousel-container">
-          <h2>DISEÑO CAD</h2>
-          <div class="carousel">
-            <img
-              src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/molde traquea iso.png"
-              alt="Imagen de diseño CAD 1"
-              class="active"
-            />
-            <img
-              src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/traquea v3.png"
-              alt="Imagen de diseño CAD 2"
-            />
-            <img
-              src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/traquea v3 explosion.png"
-              alt="Imagen de diseño CAD 3"
-            />
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CryoEBUS | Manuel Fernández Álvarez</title>
+  <meta name="description" content="Desarrollo de un simulador sintético a partir de anatomía real, con iteraciones de diseño CAD, moldes y prototipado." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/hvv-projects.css" />
+  <script defer src="../assets/js/hvv-projects.js"></script>
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#project-main">Ir al contenido</a>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html"><span class="symbol">M·F</span><span>Manuel Fernández Álvarez</span></a>
+      <nav class="navlinks" aria-label="Navegación del proyecto">
+        <a href="../index.html#medical-projects">Todos los proyectos</a>
+        <a href="#development">Desarrollo</a>
+        <a href="#gallery">Galería</a>
+      </nav>
+    </div>
+  </header>
+  <main id="project-main">
+    <section class="project-hero">
+      <div class="container project-intro">
+        <div>
+          <a class="project-back" href="../index.html#medical-projects">← Proyectos de HVV</a>
+          <p class="kicker">Hospital Virtual Valdecilla</p>
+          <h1>CryoEBUS</h1>
+          <p class="project-subtitle">Simulador de tráquea para entrenamiento médico</p>
+          <p class="project-summary">Desarrollo de un simulador sintético a partir de anatomía real, con iteraciones de diseño CAD, moldes y prototipado.</p>
+          <a class="btn primary" href="#gallery">Ver imágenes <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="carousel-container">
-          <h2>RENDERS</h2>
-          <div class="carousel">
-            <img
-              src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/render cap 2.png"
-              alt="Render del producto 1"
-              class="active"
-            />
-            <!-- <img src="../assets/img/TAVI/rv fluoroscopia.jpg" alt="Render del producto 2"> -->
-            <!-- <img src="https://placehold.co/600x400/5F9EA0/white?text=Render+2" alt="Render del producto 3"> -->
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
+        <figure class="project-hero-image">
+          <img src="../assets/img/CryoEBUS_Lineal/traquea en uso curso.jpg" alt="Simulador de tráquea para entrenamiento médico" width="1000" height="800" />
+        </figure>
+      </div>
+    </section>
+    <div class="container project-body">
+      <section class="project-contribution" aria-labelledby="contribution-title">
+        <div><div class="kicker">TRABAJO REALIZADO</div><h2 id="contribution-title">Mi aportación</h2></div>
+        <ul>
+            <li>Diseño CAD del simulador a partir de un modelo de tráquea obtenido por segmentación de imágenes TAC.</li>
+            <li>Desarrollo de moldes e iteraciones de diseño y prototipado.</li>
+            <li>Fabricación del simulador sintético para entrenamiento médico.</li>
+        </ul>
       </section>
-
-      <section class="col-center">
-        <div class="texto">
-          <div id="link_titulo">
-            <h1>CRYOEBUS LINEAL</h1>
-            <!-- <a id="linkpag" href="/pages/CryoEBUS_Lineal.html">Más Info+</a> -->
-          </div>
-          <div>
-            <h3>DISEÑO</h3>
-            <p>
-              Partiendo de un modelo 3D de tráquea de un paciente real obtenido
-              por segmentación de imágenes TAC (3D slicer), se diseñó un
-              simulador sintético mediante herramientas CAD.
-            </p>
-          </div>
-          <div>
-            <h3>FABRICACIÓN</h3>
-            <p>
-              Tras varias iteraciones de diseño y prototipado, se llegó al
-              modelo definitivo del simulador que se comercializa a nivel global
-              en la actualidad, el cual se encuentra en proceso de patente.
-            </p>
-          </div>
+      <div class="project-story" id="development">
+        <section><h2>Objetivo</h2><p>Reproducir la anatomía de la tráquea en un simulador sintético para entrenamiento en procedimientos CryoEBUS.</p></section>
+        <section><h2>Diseño</h2><p>El punto de partida fue un modelo 3D de la tráquea de un paciente, obtenido mediante segmentación de imágenes TAC con 3D Slicer. A partir de esa geometría se desarrollaron el simulador y sus moldes con herramientas CAD.</p></section>
+        <section><h2>Prototipado y fabricación</h2><p>Se realizaron varias iteraciones de diseño y prototipado hasta alcanzar la versión final. Las imágenes documentan los moldes, el desmoldeo y la fabricación de la tráquea.</p></section>
+        <section><h2>Uso del simulador</h2><p>La galería y el vídeo muestran el simulador durante un curso y la preparación de unidades para su envío.</p></section>
+      </div>
+      <section class="project-gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="kicker">DEL MODELO AL PROTOTIPO</div>
+        <h2 id="gallery-title">Galería del proyecto</h2>
+        <div class="gallery-tabs" aria-label="Categorías de imágenes">
+          <button type="button" id="tab-0" aria-controls="gallery-0">Diseño CAD</button>
+          <button type="button" id="tab-1" aria-controls="gallery-1">Renders</button>
+          <button type="button" id="tab-2" aria-controls="gallery-2">Fabricación</button>
+          <button type="button" id="tab-3" aria-controls="gallery-3">Uso del simulador</button>
         </div>
-        <section
-          id="model_viewer"
-          class="main-section"
-          style="
-            width: 100%;
-            height: 600px;
-            background-color: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          "
-        >
-          <span id="video-loading-message" class="loading-message"></span>
-          <video
-            id="main-video"
-            src="../assets/img/CryoEBUS_Lineal/video curso.mp4"
-            autoplay
-            loop
-            muted
-            playsinline
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border-radius: 20px;
-            "
-          ></video>
+        <section class="gallery-panel" id="gallery-0" aria-labelledby="tab-0">
+          <h3>Diseño CAD</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Molde de la tráquea">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/molde traquea iso.png" alt="Molde de la tráquea" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Molde de la tráquea</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Diseño de la tráquea · versión 3">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/traquea v3.png" alt="Diseño de la tráquea · versión 3" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Diseño de la tráquea · versión 3</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Vista explosionada de la tráquea">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/traquea v3 explosion.png" alt="Vista explosionada de la tráquea" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Vista explosionada de la tráquea</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-1" aria-labelledby="tab-1">
+          <h3>Renders</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Render del simulador">
+              <img loading="lazy" src="../assets/img/Capturas porfolio/CryoEBUS_Lineal/render cap 2.png" alt="Render del simulador" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Render del simulador</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-2" aria-labelledby="tab-2">
+          <h3>Fabricación</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Molde · versión 2">
+              <img loading="lazy" src="../assets/img/CryoEBUS_Lineal/molde v2.jpg" alt="Molde · versión 2" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Molde · versión 2</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Desmoldeo de la tráquea">
+              <img loading="lazy" src="../assets/img/CryoEBUS_Lineal/desmoldeo traquea v2.jpg" alt="Desmoldeo de la tráquea" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Desmoldeo de la tráquea</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Fabricación de la tráquea · versión 3">
+              <img loading="lazy" src="../assets/img/CryoEBUS_Lineal/fabricación traquea v3.jpg" alt="Fabricación de la tráquea · versión 3" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Fabricación de la tráquea · versión 3</figcaption>
+          </figure>
+          </div>
+        </section>
+        <section class="gallery-panel" id="gallery-3" aria-labelledby="tab-3">
+          <h3>Uso del simulador</h3>
+          <div class="gallery-grid">
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Preparación de unidades para envío">
+              <img loading="lazy" src="../assets/img/CryoEBUS_Lineal/envio.jpg" alt="Preparación de unidades para envío" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Preparación de unidades para envío</figcaption>
+          </figure>
+          <figure>
+            <button class="gallery-image" type="button" aria-label="Ampliar: Simulador durante un curso">
+              <img loading="lazy" src="../assets/img/CryoEBUS_Lineal/traquea en uso curso.jpg" alt="Simulador durante un curso" width="900" height="650" />
+              <span aria-hidden="true">Ampliar +</span>
+            </button>
+            <figcaption>Simulador durante un curso</figcaption>
+          </figure>
+          </div>
         </section>
       </section>
-
-      <section class="col-right">
-        <div class="carousel-container">
-          <h2>FABRICACIÓN</h2>
-          <div class="carousel">
-            <img
-              src="../assets/img/CryoEBUS_Lineal/molde v2.jpg"
-              alt="Foto del proceso de fabricación 1"
-              class="active"
-            />
-            <img
-              src="../assets/img/CryoEBUS_Lineal/desmoldeo traquea v2.jpg"
-              alt="Foto del proceso de fabricación 2"
-            />
-            <img
-              src="../assets/img/CryoEBUS_Lineal/fabricación traquea v3.jpg"
-              alt="Imagen de diseño CAD 1"
-              class="active"
-            />
-            <!-- <img src="../assets/img/CryoEBUS_Lineal/v1 desmoldeo.jpg" alt="Foto del proceso de fabricación 3"> -->
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-        <div class="carousel-container">
-          <h2>IMPLEMENTACIÓN</h2>
-          <div class="carousel">
-            <img
-              src="../assets/img/CryoEBUS_Lineal/envio.jpg"
-              alt="Foto del simulador en uso 1"
-              class="active"
-            />
-            <img
-              src="../assets/img/CryoEBUS_Lineal/traquea en uso curso.jpg"
-              alt="Foto del simulador en uso 2"
-            />
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
+      <section class="project-video" id="video" aria-labelledby="video-title">
+        <div class="kicker">EL SIMULADOR EN USO</div>
+        <h2 id="video-title">Vídeo del proyecto</h2>
+        <video controls playsinline preload="none" poster="../assets/img/CryoEBUS_Lineal/traquea en uso curso.jpg" aria-label="Vídeo del simulador CryoEBUS">
+          <source src="../assets/img/CryoEBUS_Lineal/video curso.mp4" type="video/mp4" />
+          Tu navegador no puede reproducir este vídeo.
+        </video>
+        <p><a href="../assets/img/CryoEBUS_Lineal/video curso.mp4" target="_blank" rel="noopener noreferrer">Abrir el vídeo en otra pestaña</a></p>
       </section>
+      <nav class="project-pagination" aria-label="Otros proyectos">
+        <a href="../index.html#medical-projects">← Todos los proyectos</a>
+        <a href="./AN2.html">Siguiente: Nasofaringe →</a>
+      </nav>
     </div>
-
-    <script src="../assets/js/CryoEbusL2.js"></script>
-
-    <!-- Contenedor de enfoque (overlay) -->
-    <div class="carousel-focus" id="carouselFocus" aria-hidden="true">
-      <button class="close-focus" id="closeFocus" aria-label="Cerrar">
-        &times;
-      </button>
-      <div class="focus-content"></div>
-    </div>
-  </body>
+  </main>
+  <footer class="project-footer"><div class="container"><p>Manuel Fernández Álvarez · Portfolio de ingeniería</p><a href="mailto:manuelffedezal@gmail.com">Contacto →</a></div></footer>
+  <dialog class="image-dialog" aria-label="Imagen ampliada del proyecto">
+    <div class="dialog-toolbar"><p class="dialog-caption" aria-live="polite"></p><button class="dialog-close" type="button" aria-label="Cerrar imagen ampliada">Cerrar ×</button></div>
+    <img class="dialog-image" alt="" />
+    <div class="dialog-controls"><button class="dialog-prev" type="button">← Anterior</button><p class="dialog-count" aria-live="polite"></p><button class="dialog-next" type="button">Siguiente →</button></div>
+  </dialog>
+</body>
 </html>

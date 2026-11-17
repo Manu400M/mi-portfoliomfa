@@ -1,0 +1,75 @@
+/* Shared layout for the five HVV project pages. */
+.project-page { background: var(--pale); }
+.skip-link { position: absolute; top: -100px; left: 20px; padding: 12px; background: white; color: var(--ink); z-index: 50; }
+.skip-link:focus { top: 12px; }
+.project-hero { background: var(--navy); color: white; padding: 58px 0 70px; }
+.project-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 58px; align-items: center; }
+.project-intro > * { min-width: 0; }
+.project-back { display: inline-block; color: #bfced5; margin-bottom: 35px; font-size: 13px; }
+.project-hero .kicker { color: #a2ded4; line-height: 1.7; }
+.project-hero h1 { font-size: clamp(38px, 5vw, 64px); line-height: 1.08; letter-spacing: -.04em; margin: 20px 0 14px; }
+.project-subtitle { font-size: 21px; color: #dce8ed; margin-bottom: 18px; }
+.project-summary { color: #bfced5; margin-bottom: 26px; }
+.project-hero-image { margin: 0; }
+.project-hero-image img { display: block; width: 100%; height: 410px; object-fit: cover; border-radius: 10px; }
+.project-body { padding-top: 65px; }
+.project-body h2 { font-size: clamp(26px, 3vw, 36px); }
+.project-body .kicker { color: #386d70; margin-bottom: 14px; }
+.project-contribution { display: grid; grid-template-columns: .7fr 1.3fr; gap: 50px; border-bottom: 1px solid var(--line); padding-bottom: 45px; }
+.project-contribution ul { margin: 0; padding-left: 20px; }
+.project-contribution li { margin-bottom: 12px; padding-left: 6px; }
+.project-story { display: grid; grid-template-columns: 1fr 1fr; gap: 38px 65px; padding: 55px 0 65px; }
+.project-story p { color: #526678; }
+.project-gallery { border-top: 1px solid var(--line); padding-top: 45px; }
+.gallery-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin: 25px 0; }
+.gallery-tabs button { font: inherit; font-size: 14px; border: 1px solid #9aafb7; padding: 10px 18px; color: var(--ink); background: transparent; border-radius: 5px; cursor: pointer; min-height: 44px; }
+.gallery-tabs [aria-selected="true"] { background: var(--navy2); color: white; border-color: var(--navy2); }
+.gallery-panel[hidden] { display: none; }
+.gallery-panel h3 { margin: 25px 0; }
+.project-gallery.enhanced .gallery-panel h3 { display: none; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; }
+.gallery-grid figure { margin: 0; min-width: 0; }
+.gallery-image { position: relative; display: block; width: 100%; border: 1px solid var(--line); background: white; border-radius: 9px; overflow: hidden; padding: 0; cursor: zoom-in; }
+.gallery-image img { display: block; width: 100%; height: 300px; object-fit: contain; }
+.gallery-image span { position: absolute; bottom: 12px; right: 12px; padding: 5px 10px; font-size: 12px; color: white; background: var(--navy2); border-radius: 4px; }
+.gallery-grid figcaption { font-size: 13px; color: #526678; margin-top: 9px; }
+.project-video { margin-top: 65px; }
+.project-video video { display: block; width: 100%; max-height: 580px; background: var(--navy); border-radius: 10px; margin-top: 25px; }
+.project-video p { font-size: 13px; color: #386d70; margin-top: 12px; }
+.project-video a:hover, .project-pagination a:hover { text-decoration: underline; }
+.project-pagination { display: flex; justify-content: space-between; gap: 25px; flex-wrap: wrap; border-top: 1px solid var(--line); padding: 30px 0; margin-top: 60px; font-size: 14px; font-weight: 600; }
+.project-footer { padding: 30px 0; }
+.project-footer .container { display: flex; flex-wrap: wrap; gap: 15px; justify-content: space-between; font-size: 13px; }
+.project-footer p { color: #bfced5; }
+.image-dialog { max-width: min(1100px, calc(100% - 24px)); width: 1100px; max-height: calc(100dvh - 24px); padding: 18px; border: 0; border-radius: 10px; color: var(--ink); background: var(--pale); }
+.image-dialog::backdrop { background: rgba(11,24,40,.85); }
+.dialog-toolbar, .dialog-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.dialog-caption { font-size: 14px; min-width: 0; }
+.image-dialog button { min-height: 44px; font: inherit; font-size: 14px; border: 1px solid #9aafb7; background: white; border-radius: 5px; padding: 8px 12px; cursor: pointer; color: var(--ink); }
+.dialog-close { flex-shrink: 0; }
+.image-dialog button:disabled { opacity: .5; cursor: default; }
+.dialog-image { display: block; width: 100%; height: min(65dvh, 700px); object-fit: contain; margin: 15px 0; }
+.dialog-count { font-size: 13px; white-space: nowrap; }
+html.image-open { overflow: hidden; }
+@media (max-width: 800px) {
+  .project-intro { grid-template-columns: 1fr; gap: 30px; }
+  .project-hero { padding: 35px 0 45px; }
+  .project-back { margin-bottom: 25px; }
+  .project-hero-image img { height: 350px; }
+  .project-contribution { grid-template-columns: 1fr; gap: 12px; }
+  .project-story { gap: 30px; }
+}
+@media (max-width: 560px) {
+  .project-page .navlinks { gap: 8px 14px; }
+  .project-hero-image img { height: 270px; }
+  .project-story, .gallery-grid { grid-template-columns: 1fr; }
+  .project-body { padding-top: 40px; }
+  .project-story { padding: 40px 0; }
+  .gallery-tabs { gap: 8px; }
+  .gallery-tabs button { padding: 10px 12px; font-size: 13px; }
+  .gallery-image img { height: 245px; }
+  .image-dialog { padding: 12px; }
+  .dialog-toolbar { align-items: flex-start; }
+  .image-dialog button { padding: 8px; font-size: 12px; }
+  .dialog-image { height: 55dvh; }
+}
