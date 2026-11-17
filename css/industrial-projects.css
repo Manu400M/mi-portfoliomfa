@@ -1,0 +1,22 @@
+/* Case studies describe the work without reproducing client documents. */
+.industrial-page .project-hero h1 { font-size: clamp(34px,4vw,54px); }
+.industrial-context { background: white; border-radius: 12px; padding: 45px; color: var(--ink); border-bottom: 6px solid var(--teal); }
+.industrial-context img { display: block; width: 100%; max-width: 245px; height: auto; margin: 0 0 40px; }
+.industrial-context p { font-size: 25px; font-weight: 600; line-height: 1.4; margin-bottom: 20px; }
+.industrial-context > span { display: block; border-top: 1px solid var(--line); padding-top: 20px; font-size: 14px; color: #526678; }
+.industrial-workflow { border-top: 1px solid var(--line); padding-top: 45px; }
+.industrial-workflow ol { list-style: none; padding: 0; margin: 30px 0 0; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px; }
+.industrial-workflow li { border-top: 2px solid #386d70; padding-top: 15px; }
+.workflow-number { display: block; font-size: 13px; color: #386d70; margin-bottom: 20px; }
+.industrial-workflow h3 { font-size: 20px; }
+.industrial-workflow li p { font-size: 14px; color: #526678; }
+.workflow-note { font-size: 12px; color: #526678; margin-top: 30px; }
+@media (max-width: 720px) {
+  .industrial-context { padding: 30px; }
+  .industrial-workflow ol { grid-template-columns: 1fr 1fr; gap: 30px 20px; }
+}
+@media (max-width: 420px) {
+  .industrial-workflow ol { grid-template-columns: 1fr; }
+  .industrial-workflow li { display: flex; gap: 20px; }
+  .workflow-number { margin-top: 3px; }
+}

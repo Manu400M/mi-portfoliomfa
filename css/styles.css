@@ -905,3 +905,140 @@ body {
   .experience-company-name { margin-top: 9px; }
   .experience-detail h3 { font-size: 21px; }
 }
+
+/* Identidad personal, navegación por proyectos y ritmos de sección. */
+.home-skip-link { position: absolute; left: 20px; top: -100px; z-index: 50; padding: 12px; background: white; color: var(--ink); }
+.home-skip-link:focus { top: 12px; }
+.hero-wrap { min-height: 0; padding-top: 72px; padding-bottom: 72px; }
+.hero-portrait { margin: 0; position: relative; justify-self: end; width: 100%; max-width: 390px; border-radius: 12px; overflow: hidden; background: #173444; border: 1px solid #375463; }
+.portrait-picture { height: 340px; overflow: hidden; background: radial-gradient(ellipse at 40% 70%, #477b7e, #142a3a 75%); }
+.portrait-picture img { display: block; height: 100%; width: 100%; object-fit: cover; object-position: 30% center; }
+.hero-portrait figcaption { padding: 23px 26px; background: #13283a; }
+.hero-portrait strong { font-size: 20px; display: block; letter-spacing: -.02em; }
+.hero-portrait figcaption span { color: #bfced5; font-size: 13px; display: block; margin: 5px 0 15px; }
+.hero-portrait figcaption a { font-size: 13px; color: #90e5db; }
+.hero-portrait figcaption a:hover { text-decoration: underline; }
+.project-directory { padding: 35px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: white; }
+.project-directory .container { display: flex; align-items: center; justify-content: space-between; gap: 25px; flex-wrap: wrap; }
+.project-directory nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.project-directory a { font-size: 14px; padding: 8px 0; display: inline-flex; gap: 12px; align-items: center; }
+.project-directory a:hover { text-decoration: underline; }
+.project-directory a span { color: #386d70; }
+.industrial { background: #edf2f4; }
+.industrial .kicker { color: #386d70; margin-bottom: 18px; }
+.industrial-showcase { display: grid; grid-template-columns: 1.25fr 1fr; align-items: stretch; gap: 38px; }
+.industrial-feature { display: block; overflow: hidden; border-radius: 10px; background: white; border: 1px solid var(--line); }
+.industrial-art { min-height: 220px; padding: 38px 22px 20px; background: var(--navy2); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.audit-process { display: flex; gap: 12px; align-items: center; width: 100%; justify-content: center; color: #90e5db; }
+.audit-process > span { border: 1px solid #4a777c; padding: 15px 10px; border-radius: 6px; text-align: center; font-size: 9px; letter-spacing: .08em; min-width: 0; }
+.audit-process strong { display: inline-block; font-size: 15px; letter-spacing: 0; margin-top: 6px; color: white; }
+.audit-process b { font-weight: normal; }
+.diagram-caption { font-size: 11px; color: #bfced5; margin-top: 25px; }
+.industrial-feature-copy { padding: 28px; }
+.industrial-feature-copy p { font-size: 14px; color: var(--muted); }
+.industrial-feature:hover .project-link { text-decoration: underline; }
+.industrial-aside { display: flex; flex-direction: column; justify-content: center; }
+.industrial-company { padding: 10px 0 30px; }
+.industrial-company img { width: 180px; height: auto; display: block; margin-bottom: 25px; }
+.industrial-company p { color: #526678; max-width: 340px; font-size: 19px; }
+.industrial-small { display: grid; grid-template-columns: 42px minmax(0,1fr) auto; align-items: center; gap: 16px; padding: 25px 0; border-top: 1px solid #cbd8de; }
+.industrial-small h3 { margin: 0; font-size: 20px; }
+.case-mark { font-size: 13px; color: #386d70; font-variant-numeric: tabular-nums; }
+.industrial-small:hover h3 { text-decoration: underline; }
+.personal-projects { background: var(--navy); color: white; padding: 75px 0; }
+.personal-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.personal-illustration svg { width: 100%; display: block; }
+.personal-projects .kicker { color: #a2ded4; margin-bottom: 20px; }
+.personal-projects p { color: #bfced5; font-size: 14px; }
+.personal-projects .personal-lead { color: white; font-size: 22px; margin-bottom: 17px; line-height: 1.4; }
+.personal-status { margin-top: 25px; color: #a2ded4; display: flex; gap: 10px; align-items: center; font-size: 12px; }
+.personal-status span { display: block; width: 7px; height: 7px; flex-shrink: 0; border-radius: 50%; background: #90e5db; }
+@media (max-width: 980px) {
+  .industrial-showcase { grid-template-columns: 1.15fr 1fr; gap: 25px; }
+  .audit-process { gap: 7px; }
+  .audit-process > span { padding: 12px 7px; }
+  .audit-process strong { font-size: 13px; }
+}
+@media (max-width: 720px) {
+  .hero-wrap { gap: 35px; padding-top: 50px; padding-bottom: 45px; }
+  .hero-portrait { justify-self: center; max-width: 360px; }
+  .portrait-picture { height: 290px; }
+  .hero-portrait strong { font-size: 19px; }
+  .project-directory { padding: 25px 0; }
+  .project-directory nav { gap: 5px 20px; }
+  .industrial-showcase, .personal-layout { grid-template-columns: 1fr; gap: 30px; }
+  .industrial-company { padding-bottom: 25px; }
+  .industrial-company p { font-size: 18px; }
+  .industrial-small h3 { font-size: 19px; }
+  .industrial-feature-copy { padding: 24px; }
+  .personal-illustration { max-width: 450px; }
+}
+@media (max-width: 360px) {
+  .industrial-art { padding-left: 12px; padding-right: 12px; }
+  .audit-process > span { padding: 10px 5px; font-size: 8px; }
+  .audit-process strong { font-size: 11px; }
+}
+
+/* Instituciones y herramientas: símbolos auténticos, nombres siempre visibles. */
+.education-section { background: #f5f7f8; }
+.education-section .kicker, .toolkit .kicker { color: #386d70; margin-bottom: 18px; }
+.education-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 55px; align-items: stretch; }
+.education-university { padding: 15px 0 0; }
+.education-logo { width: 210px; max-width: 100%; height: 65px; object-fit: contain; object-position: left center; display: block; margin-bottom: 28px; }
+.uc-logo { width: 250px; }
+.education-university h3 { font-size: 24px; margin-bottom: 20px; }
+.education-university .credential { padding: 20px 0; }
+.education-exchange { background: var(--navy2); color: white; border-radius: 10px; padding: 35px; display: flex; flex-direction: column; align-items: flex-start; }
+.education-exchange .education-logo { width: 230px; margin-bottom: 35px; }
+.exchange-label { color: #a2ded4; font-size: 11px; font-weight: 600; letter-spacing: .12em; margin-bottom: 15px; }
+.education-exchange p { color: #bfced5; font-size: 14px; }
+.education-exchange .exchange-date { color: white; padding-top: 22px; margin-top: auto; font-size: 14px; }
+.toolkit { background: white; }
+.tool-groups { display: grid; grid-template-columns: 1.3fr 1fr; gap: 35px 50px; }
+.tool-group { border-top: 2px solid var(--line); padding-top: 23px; }
+.tool-group h3 { font-size: 23px; }
+.tool-group > p { color: var(--muted); font-size: 14px; }
+.tool-list { list-style: none; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 20px; padding: 0; margin: 23px 0 0; }
+.tool-list li { display: flex; align-items: center; gap: 13px; min-height: 58px; }
+.tool-list img { display: block; object-fit: contain; flex-shrink: 0; width: 34px; height: 34px; }
+.tool-list strong { font-size: 14px; font-weight: 600; display: block; line-height: 1.4; }
+.tool-list small { display: block; font-size: 11px; color: var(--muted); margin-top: 3px; }
+.tool-group .tool-format { margin-top: 20px; font-size: 12px; }
+.training-row { display: flex; gap: 16px; align-items: flex-start; }
+.training-row > img { width: 38px; height: 38px; object-fit: contain; flex-shrink: 0; margin-top: 3px; }
+.training-row > div { min-width: 0; }
+@media (max-width: 980px) {
+  .education-grid { gap: 30px; }
+  .tool-groups { gap: 30px; grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px) {
+  .education-grid, .tool-groups { grid-template-columns: 1fr; gap: 35px; }
+  .education-exchange { padding: 28px; }
+  .education-university { padding-top: 0; }
+  .tool-list { gap: 12px 16px; }
+}
+@media (max-width: 360px) {
+  .tool-list { grid-template-columns: 1fr; gap: 5px; }
+}
+.focus-mobile-map { display: none; }
+@media (max-width: 560px) {
+  .focus-canvas > svg { display: none; }
+  .focus-canvas { padding: 24px; }
+  .focus-mobile-map { display: grid; grid-template-columns: 1fr; list-style: none; margin: 0; padding: 0; width: 100%; gap: 18px; }
+  .focus-mobile-map li { border-left: 2px solid #4f878c; padding-left: 14px; }
+  .focus-mobile-map strong { display: block; font-size: 15px; }
+  .focus-mobile-map span { font-size: 13px; color: #526678; }
+}
+.audit-process > span { font-size: 11px; }
+@media (max-width: 980px) and (min-width: 721px) {
+  .audit-process { flex-direction: column; }
+  .audit-process > span { width: 100%; max-width: 230px; }
+  .audit-process > b { transform: rotate(90deg); }
+}
+@media (max-width: 720px) {
+  .audit-process { flex-direction: column; gap: 9px; }
+  .audit-process > span { width: 100%; max-width: 240px; padding: 13px; font-size: 11px; }
+  .audit-process strong { font-size: 16px; }
+  .audit-process > b { transform: rotate(90deg); }
+}
+.tool-list img[src$="solidworks.svg"], .tool-list img[src$="ansys.svg"] { width: 48px; }

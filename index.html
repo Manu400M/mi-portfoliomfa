@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <a class="home-skip-link" href="#top">Ir al contenido</a>
     <header>
       <div class="container nav">
         <a class="brand" href="#top">
@@ -65,51 +66,10 @@
               </a>
             </div>
           </div>
-          <div class="hero-map" aria-label="Diagrama conceptual de ingeniería de sistemas">
-            <svg viewBox="0 0 460 420" role="img" aria-label="Requisitos, diseño, verificación e integración conectados mediante una visión de sistemas">
-              <defs>
-                <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-                  <stop stop-color="#60d0c0"/>
-                  <stop offset="1" stop-color="#2a5366"/>
-                </lineargradient>
-              </defs>
-              <circle cx="229" cy="212" r="153" stroke="#447084" stroke-width="1" fill="none" stroke-dasharray="3 7"/>
-              <circle cx="229" cy="212" r="101" stroke="#4f7985" stroke-width="1.2" fill="none"/>
-              <circle cx="229" cy="212" r="63" fill="#153747" stroke="#70c9bf" stroke-width="1.6"/>
-              <path d="M229 149V81 M293 211H376 M229 275V350 M166 211H82" stroke="#5da39f" stroke-width="1.5" opacity=".75"/>
-              <path d="M158 143L122 104 M303 141L342 105 M302 284L341 321 M156 283L119 321" stroke="#305f70" stroke-width="1.5"/>
-              <g fill="#183848" stroke="#79ccc0" stroke-width="1.2">
-                <rect x="174" y="41" width="110" height="40" rx="5"/>
-                <rect x="340" y="192" width="116" height="40" rx="5"/>
-                <rect x="174" y="347" width="110" height="40" rx="5"/>
-                <rect x="0" y="192" width="114" height="40" rx="5"/>
-              </g>
-              <text x="229" y="204" text-anchor="middle" class="ring-label">
-                VISIÓN DE
-              </text>
-              <text x="229" y="221" text-anchor="middle" class="orbit-label">
-                SISTEMAS
-              </text>
-              <text x="229" y="65" text-anchor="middle" class="ring-label">
-                REQUISITOS
-              </text>
-              <text x="398" y="215" text-anchor="middle" class="ring-label">
-                DISEÑO
-              </text>
-              <text x="229" y="370" text-anchor="middle" class="ring-label">
-                VERIFICACIÓN
-              </text>
-              <text x="56" y="215" text-anchor="middle" class="ring-label">
-                INTEGRACIÓN
-              </text>
-              <g fill="#6fd9c9">
-                <circle cx="229" cy="112" r="4"/>
-                <circle cx="328" cy="212" r="4"/>
-                <circle cx="229" cy="312" r="4"/>
-                <circle cx="128" cy="212" r="4"/>
-              </g>
-            </svg>
-          </div>
+          <figure class="hero-portrait">
+            <div class="portrait-picture"><img src="./assets/img/foto perfil.png" alt="Manuel Fernández Álvarez" width="577" height="433" /></div>
+            <figcaption><strong>Manuel Fernández Álvarez</strong><span>Ingeniero en Tecnologías Industriales</span><a href="https://www.linkedin.com/in/manuel-fernandez-alvarez" target="_blank" rel="noopener noreferrer">Conoce mi trayectoria →</a></figcaption>
+          </figure>
         </div>
         <div class="hero-bottom">
           <div class="container">
@@ -301,6 +261,12 @@
                   </g>
                 </g>
               </svg>
+              <ul class="focus-mobile-map" aria-label="Áreas de desarrollo en ingeniería de sistemas">
+                <li><strong>Requisitos</strong><span>Definición y trazabilidad</span></li>
+                <li><strong>Interfaces</strong><span>Arquitectura del sistema</span></li>
+                <li><strong>Integración</strong><span>Verificación y validación</span></li>
+                <li><strong>Base técnica</strong><span>CAD, CAE y automatización</span></li>
+              </ul>
             </div>
             <div class="focus-sidebar">
               <div class="focus-note">
@@ -332,91 +298,22 @@
           </div>
         </div>
       </section>
-      <section id="projects" class="section projects">
+      <section id="projects" class="project-directory">
+        <div class="container"><div class="kicker">PROYECTOS Y TRABAJO TÉCNICO</div><nav aria-label="Explorar proyectos por ámbito"><a href="#ingecid-projects">INGECID <span aria-hidden="true">↓</span></a><a href="#medical-projects">Simulación médica <span aria-hidden="true">↓</span></a><a href="#personal-projects">Proyectos personales <span aria-hidden="true">↓</span></a></nav></div>
+      </section>
+      <section id="ingecid-projects" class="section industrial">
         <div class="container">
-          <div class="section-head">
-            <div>
-              <div class="kicker" style="color:#407b79;margin-bottom:20px">
-                PROYECTOS DESTACADOS
-              </div>
-              <h2>
-                Aprender desarrollando.
-              </h2>
+          <div class="section-head"><div><div class="kicker">INGECID · PROYECTOS INDUSTRIALES</div><h2>Ingeniería, datos<br>y automatización.</h2></div><p>Una selección de trabajos en proyectos multidisciplinares: revisión técnica, auditoría de modelos y mejora de procesos.</p></div>
+          <div class="industrial-showcase">
+            <a class="industrial-feature" href="./pages/ingecid-auditoria-bim.html">
+              <div class="industrial-art"><div class="audit-process" role="img" aria-label="Flujo de auditoría: modelo IFC, comprobación con Python e IDS y evidencias en Excel o PDF"><span>MODELO<br><strong>IFC</strong></span><b aria-hidden="true">→</b><span>COMPROBACIÓN<br><strong>Python + IDS</strong></span><b aria-hidden="true">→</b><span>EVIDENCIAS<br><strong>Excel / PDF</strong></span></div><span class="diagram-caption">Esquema del flujo de trabajo</span></div>
+              <div class="industrial-feature-copy"><div class="mini-label">AUTOMATIZACIÓN DE INGENIERÍA</div><h3>Auditoría de modelos BIM/IFC</h3><p>Herramientas con Python para extraer propiedades, verificar requisitos mediante IDS y generar evidencias de auditoría.</p><span class="project-link">Explorar el trabajo →</span></div>
+            </a>
+            <div class="industrial-aside">
+              <div class="industrial-company"><img src="./assets/img/companies/ingecid.png" alt="INGECID" width="260" height="57" /><p>De la información de diseño a entregables revisados y documentados.</p></div>
+              <a class="industrial-small" href="./pages/ingecid-revision-tecnica.html"><span class="case-mark" aria-hidden="true">01</span><h3>Revisión de entregables técnicos</h3><span aria-hidden="true">→</span></a>
+              <a class="industrial-small" href="./pages/ingecid-procesos.html"><span class="case-mark" aria-hidden="true">02</span><h3>Procesos y seguimiento de entregables</h3><span aria-hidden="true">→</span></a>
             </div>
-            <p>
-              Una muestra de automatización aplicada en el trabajo y un estudio personal de ingeniería de sistemas, identificado con su estado de desarrollo.
-            </p>
-          </div>
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-visual">
-                <svg viewBox="0 0 560 220" aria-hidden="true">
-                  <g fill="none" stroke="#6caaa7" stroke-width="1.2">
-                    <ellipse cx="281" cy="113" rx="204" ry="59" transform="rotate(-17 281 113)" stroke-dasharray="4 5"/>
-                    <ellipse cx="281" cy="113" rx="145" ry="42" transform="rotate(23 281 113)"/>
-                    <circle cx="281" cy="113" r="52" stroke="#91c8c0"/>
-                    <path d="M261 70q63 47 44 87 M238 112q42-27 89-8 M268 147q-29-36-1-82"/>
-                    <rect x="371" y="53" width="25" height="18" fill="#73bdb6"/>
-                    <path d="M383 48v28M361 62h45"/>
-                    <rect x="116" y="134" width="25" height="18" fill="#73bdb6"/>
-                    <path d="M128 129v28M106 143h45"/>
-                  </g>
-                  <circle cx="281" cy="113" r="49" fill="#235163" opacity=".34"/>
-                </svg>
-              </div>
-              <div class="project-text">
-                <div class="mini-label">
-                  ESTUDIO PERSONAL · FASE INICIAL
-                </div>
-                <h3>
-                  EO-12
-                </h3>
-                <p>
-                  Concepto de constelación de observación terrestre para practicar ingeniería de sistemas: necesidad de misión, límites del sistema, escenarios, requisitos y arquitectura conforme avance el trabajo.
-                </p>
-                <div class="project-foot">
-                  <span class="planned">
-                    Se documentará progresivamente
-                  </span>
-                </div>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-visual audit-visual" aria-hidden="true">
-                <span>
-                  IFC → Python → IDS
-                  <br>
-                  <small>
-                    Validación · Evidencias · Trazabilidad
-                  </small>
-                </span>
-              </div>
-              <div class="project-text">
-                <div class="mini-label">
-                  EXPERIENCIA PROFESIONAL · INGECID
-                </div>
-                <h3>
-                  Automatización de auditorías BIM/IFC
-                </h3>
-                <p>
-                  Desarrollo de herramientas con Python e IfcOpenShell para extraer y verificar propiedades de modelos IFC frente a requisitos, generar evidencias en Excel/PDF y apoyar correcciones controladas.
-                </p>
-                <div class="tags">
-                  <span>
-                    Python
-                  </span>
-                  <span>
-                    IfcOpenShell
-                  </span>
-                  <span>
-                    IDS
-                  </span>
-                  <span>
-                    Excel / PDF
-                  </span>
-                </div>
-              </div>
-            </article>
           </div>
         </div>
       </section>
@@ -449,64 +346,65 @@
           </div>
         </div>
       </section>
-      <section id="about" class="section bottom">
-        <div class="container bottom-grid">
-          <div>
-            <div class="kicker" style="color:#407b79;margin-bottom:18px">
-              FORMACIÓN
-            </div>
-            <h3>
-              Formación y desarrollo
-            </h3>
-            <div class="credential">
-              <strong>
-                Máster en Ingeniería Industrial · en curso
-              </strong>
-              <small>
-                Universidad de Cantabria
-              </small>
-            </div>
-            <div class="credential">
-              <strong>
-                Grado en Ingeniería en Tecnologías Industriales
-              </strong>
-              <small>
-                Universidad de Cantabria · 2024
-              </small>
-            </div>
-            <div class="credential">
-              <strong>
-                Erasmus · previsto para primavera de 2027
-              </strong>
-              <small>
-                Linköping University
-              </small>
-            </div>
+      <section id="personal-projects" class="section personal-projects">
+        <div class="container personal-layout"><div class="personal-illustration"><svg viewBox="0 0 560 220" aria-hidden="true">
+                  <g fill="none" stroke="#6caaa7" stroke-width="1.2">
+                    <ellipse cx="281" cy="113" rx="204" ry="59" transform="rotate(-17 281 113)" stroke-dasharray="4 5"/>
+                    <ellipse cx="281" cy="113" rx="145" ry="42" transform="rotate(23 281 113)"/>
+                    <circle cx="281" cy="113" r="52" stroke="#91c8c0"/>
+                    <path d="M261 70q63 47 44 87 M238 112q42-27 89-8 M268 147q-29-36-1-82"/>
+                    <rect x="371" y="53" width="25" height="18" fill="#73bdb6"/>
+                    <path d="M383 48v28M361 62h45"/>
+                    <rect x="116" y="134" width="25" height="18" fill="#73bdb6"/>
+                    <path d="M128 129v28M106 143h45"/>
+                  </g>
+                  <circle cx="281" cy="113" r="49" fill="#235163" opacity=".34"/>
+                </svg></div><div><div class="kicker">PROYECTO PERSONAL · FASE INICIAL</div><h2>EO-12</h2><p class="personal-lead">Aprender ingeniería de sistemas a través de una misión espacial.</p><p>Concepto de constelación de observación terrestre para practicar la definición de necesidades de misión, límites del sistema, escenarios, requisitos y arquitectura.</p><div class="personal-status"><span aria-hidden="true"></span>Estudio en fase inicial · documentación progresiva</div></div></div>
+      </section>
+      <section id="about" class="section education-section">
+        <div class="container">
+          <div class="section-head"><div><div class="kicker">FORMACIÓN E INTERNACIONALIZACIÓN</div><h2>Una base técnica<br>que sigue creciendo.</h2></div><p>Formación en ingeniería industrial y una próxima etapa académica en Suecia.</p></div>
+          <div class="education-grid">
+            <article class="education-university">
+              <img class="education-logo uc-logo" loading="lazy" src="./assets/img/education/universidad-cantabria.jpg" alt="Universidad de Cantabria" width="279" height="65" />
+              <h3>Universidad de Cantabria</h3>
+              <div class="credential"><strong>Máster en Ingeniería Industrial</strong><small>Máster habilitante · en curso</small></div>
+              <div class="credential"><strong>Grado en Ingeniería en Tecnologías Industriales</strong><small>Finalizado en 2024</small></div>
+            </article>
+            <article class="education-exchange">
+              <img class="education-logo" loading="lazy" src="./assets/img/education/linkoping.svg" alt="Linköping University" width="493" height="124" />
+              <div class="exchange-label">PRÓXIMA ETAPA · SUECIA</div>
+              <h3>Linköping University</h3>
+              <p>Intercambio Erasmus en la Facultad de Ciencias e Ingeniería.</p>
+              <p class="exchange-date">Previsto para primavera de 2027</p>
+            </article>
           </div>
-          <div>
-            <div class="kicker" style="color:#407b79;margin-bottom:18px">
-              HERRAMIENTAS
-            </div>
-            <h3>
-              Herramientas al servicio del proyecto
-            </h3>
-            <p>
-              Diseño y fabricación, simulación estructural, automatización y control de información técnica al servicio de la ingeniería.
-            </p>
-            <div class="about-skills">
-              <div class="skill">
-                CAD · SolidWorks / CATIA V5 / 3DEXPERIENCE / Fusion 360
-              </div>
-              <div class="skill">
-                CAE · ANSYS Mechanical / Workbench / LS-DYNA
-              </div>
-              <div class="skill">
-                Automatización · Python / Excel y VBA
-              </div>
-              <div class="skill">
-                Datos · IFC / Navisworks / Power BI
-              </div>
-            </div>
+        </div>
+      </section>
+      <section id="toolkit" class="section toolkit">
+        <div class="container"><div class="section-head"><div><div class="kicker">HERRAMIENTAS DE TRABAJO</div><h2>Del diseño al dato.</h2></div><p>Herramientas organizadas por su función en el trabajo de ingeniería.</p></div>
+          <div class="tool-groups">
+            <section class="tool-group"><h3>Diseño y fabricación</h3><p>Modelado de componentes, conjuntos y moldes.</p><ul class="tool-list">
+              <li><img loading="lazy" src="./assets/img/software/solidworks.svg" alt="" width="34" height="34" /><span><strong>SolidWorks</strong><small>Dassault Systèmes</small></span></li>
+              <li><img loading="lazy" src="./assets/img/software/dassault-systemes.svg" alt="" width="34" height="34" /><span><strong>CATIA V5</strong><small>Dassault Systèmes</small></span></li>
+              <li><img loading="lazy" src="./assets/img/software/dassault-systemes.svg" alt="" width="34" height="34" /><span><strong>3DEXPERIENCE</strong><small>Dassault Systèmes</small></span></li>
+              <li><img loading="lazy" src="./assets/img/software/fusion.svg" alt="" width="34" height="34" /><span><strong>Fusion 360</strong><small>Autodesk</small></span></li>
+              <li><img loading="lazy" src="./assets/img/software/inventor.svg" alt="" width="34" height="34" /><span><strong>Inventor</strong><small>Autodesk</small></span></li>
+              <li><img loading="lazy" src="./assets/img/software/autocad.svg" alt="" width="34" height="34" /><span><strong>AutoCAD</strong><small>Autodesk</small></span></li>
+            </ul></section>
+            <section class="tool-group"><h3>Simulación y análisis</h3><p>Análisis mecánico y estructural.</p><ul class="tool-list">
+              <li><img loading="lazy" src="./assets/img/software/ansys.svg" alt="" width="34" height="34" /><span><strong>Mechanical / Workbench</strong><small>Ansys</small></span></li>
+              <li><img loading="lazy" src="./assets/img/software/ansys.svg" alt="" width="34" height="34" /><span><strong>LS-DYNA</strong><small>Ansys</small></span></li>
+            </ul></section>
+            <section class="tool-group"><h3>Automatización</h3><p>Tratamiento de información y procesos de ingeniería.</p><ul class="tool-list">
+              <li><img loading="lazy" src="./assets/img/software/python.svg" alt="" width="34" height="34" /><span><strong>Python</strong></span></li>
+              <li><img loading="lazy" src="./assets/img/software/excel.svg" alt="" width="34" height="34" /><span><strong>Excel y VBA</strong><small>Microsoft</small></span></li>
+            </ul></section>
+            <section class="tool-group"><h3>Datos y modelos BIM</h3><p>Revisión de modelos y seguimiento de información.</p><ul class="tool-list">
+              <li><img loading="lazy" src="./assets/img/software/navisworks.svg" alt="" width="34" height="34" /><span><strong>Navisworks</strong><small>Autodesk</small></span></li>
+              <li><img loading="lazy" src="./assets/img/software/power-bi.svg" alt="" width="34" height="34" /><span><strong>Power BI</strong><small>Microsoft</small></span></li>
+              <li><img loading="lazy" src="./assets/img/software/ifcopenshell.png" alt="" width="34" height="34" /><span><strong>IfcOpenShell</strong></span></li>
+            </ul><p class="tool-format">Formatos y especificaciones: IFC · IDS</p></section>
           </div>
         </div>
       </section>
@@ -518,7 +416,7 @@
                 APRENDIZAJE CONTINUO
               </div>
               <h2>
-                Formación complementaria e idiomas.
+                Cursos e idiomas.
               </h2>
             </div>
           </div>
@@ -527,23 +425,23 @@
               <h3>
                 Cursos y certificaciones
               </h3>
-              <div class="credential">
+              <div class="credential training-row"><img loading="lazy" src="./assets/img/software/ansys.svg" alt="" width="38" height="38" /><div>
                 <strong>
                   Stress Analysis using ANSYS Mechanical
                 </strong>
                 <small>
                   ANSYS · 2026
                 </small>
-              </div>
-              <div class="credential">
+              </div></div>
+              <div class="credential training-row"><img loading="lazy" src="./assets/img/software/dassault-systemes.svg" alt="" width="38" height="38" /><div>
                 <strong>
                   Mechanical Design and Functional Analysis with CATIA V5
                 </strong>
                 <small>
                   Red Innpulso · 2026
                 </small>
-              </div>
-              <div class="credential">
+              </div></div>
+              <div class="credential training-row"><img loading="lazy" src="./assets/img/software/dassault-systemes.svg" alt="" width="38" height="38" /><div>
                 <a href="./assets/doc/Certified3DEXPERIENCE3DInnovator-Associate_Badge20250818-32-6yrsmb.pdf">
                   <strong>
                     Certified 3DEXPERIENCE 3D Innovator — Associate →
@@ -552,8 +450,8 @@
                 <small>
                   Dassault Systèmes · 2025
                 </small>
-              </div>
-              <div class="credential">
+              </div></div>
+              <div class="credential training-row"><img loading="lazy" src="./assets/img/logo fcc.png" alt="" width="38" height="38" /><div>
                 <a href="https://www.freecodecamp.org/certification/fcc-e562c46e-e965-4672-adb9-c83f424a5bd0/responsive-web-design">
                   <strong>
                     Responsive Web Design →
@@ -562,8 +460,8 @@
                 <small>
                   freeCodeCamp · 2025
                 </small>
-              </div>
-              <div class="credential">
+              </div></div>
+              <div class="credential training-row"><img loading="lazy" src="./assets/img/software/ansys.svg" alt="" width="38" height="38" /><div>
                 <a href="https://innoverse.ansys.com/badges/badge/aW50cm8tdG8tYW5zeXMtZmx1ZW50LTQ4NQ%3D%3D">
                   <strong>
                     Intro to ANSYS Fluent →
@@ -572,7 +470,7 @@
                 <small>
                   ANSYS · 2025
                 </small>
-              </div>
+              </div></div>
             </div>
             <div>
               <h3>
