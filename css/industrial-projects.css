@@ -20,3 +20,22 @@
   .industrial-workflow li { display: flex; gap: 20px; }
   .workflow-number { margin-top: 3px; }
 }
+/* Case-study evidence and maturity are visible without interactions. */
+.industrial-context .case-status { font-size: 23px; }
+.case-example, .case-evidence { margin-top: 55px; padding-top: 40px; border-top: 1px solid var(--line); }
+.case-example dl { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px 40px; margin: 30px 0 0; }
+.case-example dl > div { padding-left: 18px; border-left: 2px solid #4f878c; }
+.case-example dt { font-weight: 600; margin-bottom: 8px; }
+.case-example dd { color: #526678; font-size: 14px; margin: 0; }
+.evidence-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
+.evidence-columns h3 { font-size: 21px; }
+.evidence-columns p { color: #526678; font-size: 15px; }
+.evidence-columns .evidence-state { color: #386d70; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+.case-learning { padding: 30px; margin-top: 45px; background: #e5eded; border-radius: 8px; }
+.case-learning p { color: #3c5664; }
+.case-editorial-note { margin-top: 30px; font-size: 12px; color: #526678; }
+@media (max-width: 720px) {
+  .case-example dl, .evidence-columns { grid-template-columns: 1fr; }
+  .case-learning { padding: 24px; }
+  .case-example, .case-evidence { margin-top: 40px; }
+}

@@ -1042,3 +1042,18 @@ body {
   .audit-process > b { transform: rotate(90deg); }
 }
 .tool-list img[src$="solidworks.svg"], .tool-list img[src$="ansys.svg"] { width: 48px; }
+/* Clear distinction between applied work, prototypes and current learning. */
+.case-card-state { font-size: 12px; color: #386d70; margin-bottom: 10px; }
+.industrial-small .case-card-state { font-size: 12px; margin: 8px 0 0; color: #386d70; line-height: 1.5; }
+.industrial-feature-copy .case-card-state { color: #386d70; font-size: 12px; }
+.industrial-public-note { font-size: 12px; color: #526678; margin-top: 25px; }
+.systems-learning { background: var(--navy); color: white; padding: 70px 0; }
+.learning-layout { display: grid; grid-template-columns: 1fr 1.1fr; gap: 55px; align-items: center; }
+.systems-learning .kicker { color: #a2ded4; margin-bottom: 20px; }
+.learning-layout > div > p { font-size: 20px; color: #dce8ed; }
+.learning-layout .learning-note { font-size: 14px; color: #bfced5; margin-top: 22px; }
+.tool-group .skill-context { margin-top: 10px; font-size: 12px; color: #386d70; }
+@media (max-width: 720px) {
+  .learning-layout { grid-template-columns: 1fr; gap: 20px; }
+  .learning-layout > div > p { font-size: 18px; }
+}
