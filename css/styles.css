@@ -886,3 +886,22 @@ body {
   .hvv-small img { width: 75px; height: 75px; }
   .hvv-small h3 { font-size: 18px; }
 }
+
+/* Experiencia en una secuencia cronológica única, de más reciente a más antigua. */
+.experience-timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 22px; }
+.experience-position { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 36px; border: 1px solid var(--line); border-radius: 10px; padding: 30px; background: white; }
+.experience-company { border-right: 1px solid var(--line); padding-right: 28px; }
+.experience-company img { width: 100%; max-width: 190px; height: 70px; object-fit: contain; object-position: left center; display: block; }
+.experience-company-name { font-size: 14px; color: var(--muted); margin-top: 14px; }
+.experience-period { font-size: 13px; color: #386d70; font-weight: 600; margin-bottom: 10px; }
+.experience-detail h3 { font-size: 23px; }
+.experience-detail ul { padding-left: 19px; margin: 18px 0 0; }
+.experience-detail li { color: var(--muted); margin-bottom: 9px; font-size: 14px; padding-left: 3px; }
+.experience-detail li:last-child { margin-bottom: 0; }
+@media (max-width: 720px) {
+  .experience-position { grid-template-columns: 1fr; padding: 24px; gap: 20px; }
+  .experience-company { border-right: 0; border-bottom: 1px solid var(--line); padding: 0 0 18px; }
+  .experience-company img { width: 170px; height: 55px; }
+  .experience-company-name { margin-top: 9px; }
+  .experience-detail h3 { font-size: 21px; }
+}
