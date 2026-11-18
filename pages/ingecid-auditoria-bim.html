@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Verificación y reconciliación CAD/IFC | Manuel Fernández Álvarez</title>
-  <meta name="description" content="Definición funcional, integración y pruebas de una herramienta de tratamiento y comprobación de información CAD/IFC, desarrollada con apoyo de IA." />
+  <meta name="description" content="Definición funcional, integración y pruebas de una herramienta para tratar y comprobar información CAD/IFC, desarrollada con apoyo de IA." />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/hvv-projects.css" />
   <link rel="stylesheet" href="../css/industrial-projects.css" />
   <meta property="og:title" content="Verificación y reconciliación CAD/IFC | Manuel Fernández Álvarez" />
-  <meta property="og:description" content="Definición funcional, integración y pruebas de una herramienta de tratamiento y comprobación de información CAD/IFC, desarrollada con apoyo de IA." />
+  <meta property="og:description" content="Definición funcional, integración y pruebas de una herramienta para tratar y comprobar información CAD/IFC, desarrollada con apoyo de IA." />
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Manuel Fernández Álvarez · Portfolio" />
@@ -22,43 +22,92 @@
 </head>
 <body class="project-page industrial-page">
   <a class="skip-link" href="#project-main">Ir al contenido</a>
-  <header><div class="container nav"><a class="brand" href="../index.html"><span class="symbol">M·F</span><span>Manuel Fernández Álvarez</span></a><nav class="navlinks" aria-label="Navegación del caso"><a href="../index.html#ingecid-projects">INGECID</a><a href="#development">Desarrollo</a><a href="#evidence">Estado y evidencia</a></nav></div></header>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html"><span class="symbol">M·F</span><span>Manuel Fernández Álvarez</span></a>
+      <nav class="navlinks" aria-label="Navegación del caso">
+        <a href="../index.html#ingecid-projects">INGECID</a>
+        <a href="#development">Desarrollo</a>
+        <a href="#evidence">Evidencia y límites</a>
+      </nav>
+    </div>
+  </header>
   <main id="project-main">
-    <section class="project-hero"><div class="container project-intro">
-      <div><a class="project-back" href="../index.html#ingecid-projects">← Trabajos en INGECID</a><p class="kicker">AUTOMATIZACIÓN DE INGENIERÍA</p><h1>Verificación y reconciliación CAD/IFC</h1><p class="case-lead-state case-status">Desarrollo iterativo · validaciones parciales</p><p class="project-subtitle">Requisitos de información, integración y pruebas</p><p class="project-summary">Definición funcional, integración y pruebas de una herramienta de tratamiento y comprobación de información CAD/IFC, desarrollada con apoyo de IA.</p><a class="btn primary" href="#development">Explorar el trabajo ↓</a></div>
-      <figure class="industrial-case-figure conceptual-case-image">
-        <img src="../assets/img/industrial/cad-ifc.svg" alt="Conjunto mecánico y comprobación conceptual de información CAD/IFC" width="1200" height="720" />
-        <figcaption>Ilustración conceptual original, sin datos de proyecto. No es una captura de la herramienta.</figcaption>
-      </figure>
-    </div></section>
-    <div class="container project-body">
-      <section class="project-contribution" aria-labelledby="contribution-title"><div><div class="kicker">MI CONTRIBUCIÓN</div><h2 id="contribution-title">Qué hice</h2></div><ul>
-          <li>Definición de requisitos de información, reglas de comprobación y flujos de trabajo.</li>
-          <li>Coordinación del desarrollo asistido por IA, integración de componentes y diagnóstico de incidencias.</li>
-          <li>Pruebas y verificación de resultados, documentación y preparación de paquetes para su transferencia al equipo.</li>
-      </ul></section>
-      <div class="project-story" id="development">
-        <section><h2>Problema de ingeniería</h2><p>Los modelos de ingeniería pueden llegar fragmentados y presentar diferencias de estructura, colocación o metadatos. Componerlos y comparar su información requiere conservar la identidad y la procedencia de los datos.</p></section>
-        <section><h2>Objetivo y alcance</h2><p>Definir un flujo de tratamiento y reconciliación que permita revisar la información, preservar datos correctos y separar las operaciones automáticas de las excepciones que requieren intervención técnica.</p></section>
-        <section><h2>Enfoque y decisiones</h2><p>Diseño de un flujo modular para preparar modelos, comparar información, tratar discrepancias y comprobar integridad. El desarrollo se realizó con apoyo de IA: mi aportación incluyó requisitos, criterio de ingeniería, integración, diagnóstico y pruebas.</p></section>
-        <section><h2>Herramientas utilizadas</h2><p>Python, IfcOpenShell, IFC, SolidWorks, Navisworks y Excel. Uso de reglas de validación y trabajo con requisitos de información, incluidos esquemas IDS.</p></section>
+    <section class="project-hero">
+      <div class="container project-intro">
+        <div>
+          <a class="project-back" href="../index.html#ingecid-projects">← Trabajos en INGECID</a>
+          <p class="kicker">REQUISITOS DE INFORMACIÓN · INTEGRACIÓN Y PRUEBAS</p>
+          <h1>Verificación y reconciliación CAD/IFC</h1>
+          <p class="case-lead-state case-status">Desarrollo iterativo · validaciones parciales</p>
+          <p class="project-summary">Definición funcional, integración y pruebas de una herramienta para tratar y comprobar información CAD/IFC, desarrollada con apoyo de IA.</p>
+          <a class="btn primary" href="#example">Ver el ejemplo sintético ↓</a>
+        </div>
+        <figure class="industrial-case-figure">
+          <img src="../assets/img/industrial/cad-ifc.svg" alt="Esquema original de información CAD e IFC, comparación de propiedades e intervención de revisión." width="1200" height="720" />
+          <figcaption>Ilustración conceptual original con geometrías y datos ficticios.</figcaption>
+        </figure>
       </div>
-      <section class="industrial-workflow" id="workflow" aria-labelledby="workflow-title"><div class="kicker">ESQUEMA CONCEPTUAL RECREADO</div><h2 id="workflow-title">Cómo se conecta el trabajo.</h2><ol>
-          <li><span class="workflow-number">01</span><div><h3>Datos de origen</h3><p>Modelos e información de referencia</p></div></li>
-          <li><span class="workflow-number">02</span><div><h3>Criterios</h3><p>Reglas de comprobación y correspondencia</p></div></li>
-          <li><span class="workflow-number">03</span><div><h3>Tratamiento</h3><p>Comparación y reconciliación controlada</p></div></li>
-          <li><span class="workflow-number">04</span><div><h3>Verificación</h3><p>Resultados revisables y pruebas</p></div></li>
-      </ol></section>
-      <section class="case-example" aria-labelledby="example-title"><div class="kicker">LECTURA DEL PROCESO</div><h2 id="example-title">Cómo separar una comprobación de una decisión</h2><dl>
-          <div><dt>Información disponible</dt><dd>Conservar los datos correctos y su origen.</dd></div>
-          <div><dt>Discrepancia</dt><dd>Señalar qué información necesita revisión.</dd></div>
-          <div><dt>Excepción</dt><dd>Derivar los casos ambiguos a intervención técnica.</dd></div>
-          <div><dt>Resultado</dt><dd>Revisar la evidencia antes de aplicar cambios.</dd></div>
-      </dl><p class="workflow-note">Ilustración genérica: no representa registros ni salidas de herramientas de empresa.</p></section>
-      <section class="case-evidence" id="evidence" aria-labelledby="evidence-title"><div class="kicker">VALIDACIÓN Y ALCANCE</div><h2 id="evidence-title">Evidencia y límites.</h2><div class="evidence-columns"><div><h3>Trabajo y comprobaciones</h3><p>Pruebas funcionales y de regresión sobre partes del flujo, revisión de resultados y preparación de distribuciones para otros entornos de usuario. Las validaciones fueron parciales y no acreditan un despliegue global.</p></div><div><h3>Estado del caso</h3><p class="evidence-state">Desarrollo iterativo · validaciones parciales</p><p>Herramienta en evolución. Los flujos de recuperación y nuevas capacidades de alineamiento incluyeron propuestas y especificaciones; no se presentan como funciones terminadas ni validadas en todos los escenarios.</p></div></div></section>
-      <section class="case-learning"><h2>Aprendizaje técnico.</h2><p>La automatización de datos de ingeniería exige criterios explícitos, controles de integridad y resultados revisables. La intervención humana sigue siendo necesaria ante información ambigua o incompleta.</p></section>
-      <p class="case-editorial-note">Descripción anonimizada y esquemas originales. No se publican modelos, documentos ni datos de clientes.</p>
-      <nav class="project-pagination" aria-label="Otros trabajos"><a href="../index.html#ingecid-projects">← Trabajos en INGECID</a><a href="./ingecid-procesos.html">Seguimiento documental con Excel y Power BI →</a></nav>
+    </section>
+    <div class="container project-body">
+      <section class="case-problem" id="development" aria-labelledby="problem-title">
+        <div class="kicker">CONTEXTO</div>
+        <h2 id="problem-title">El problema</h2>
+        <p>Los modelos parciales exportados desde CAD pueden diferir en estructura, colocación o propiedades respecto a una referencia. Compararlos exige reconocer correspondencias y conservar la procedencia de los datos: una diferencia no justifica sobrescribir información correcta ni resolver automáticamente una ambigüedad.</p>
+      </section>
+      <section class="project-contribution" aria-labelledby="contribution-title">
+        <div><div class="kicker">MI CONTRIBUCIÓN</div><h2 id="contribution-title">Qué hice</h2></div>
+        <ul>
+          <li>Definí requisitos funcionales y de información, reglas de comprobación y flujos de revisión.</li>
+          <li>Preparé y refiné especificaciones para el desarrollo asistido por IA.</li>
+          <li>Integré componentes, diagnostiqué incidencias y revisé los resultados del tratamiento de modelos.</li>
+          <li>Realicé pruebas funcionales, de integración y regresión sobre partes del flujo y preparé documentación para su transferencia.</li>
+        </ul>
+      </section>
+      <section class="industrial-workflow" aria-labelledby="workflow-title">
+        <h2 id="workflow-title">Cómo lo abordé</h2>
+        <p class="method-intro">Separar la correspondencia entre elementos de la decisión sobre sus propiedades. El flujo compara datos y referencia, conserva su origen y deriva las excepciones a revisión técnica. Utilicé Python e IfcOpenShell con IFC, SolidWorks, Navisworks y Excel; los requisitos de información incluyeron reglas de Information Delivery Specification (IDS).</p>
+        <ol aria-label="Etapas del método">
+          <li><span class="workflow-number">01</span><div><h3>Preparar</h3><p>Modelos parciales y fuente de referencia.</p></div></li>
+          <li><span class="workflow-number">02</span><div><h3>Comparar</h3><p>Correspondencias y propiedades.</p></div></li>
+          <li><span class="workflow-number">03</span><div><h3>Revisar</h3><p>Conflictos y excepciones sin regla inequívoca.</p></div></li>
+          <li><span class="workflow-number">04</span><div><h3>Comprobar</h3><p>Integridad y resultados antes de aplicar cambios.</p></div></li>
+        </ol>
+      </section>
+      <section class="case-example" id="example" aria-labelledby="example-title">
+        <div class="kicker">EJEMPLO SINTÉTICO · DATOS FICTICIOS</div>
+        <h2 id="example-title">Dos diferencias no requieren la misma decisión.</h2>
+        <p>Ejemplo totalmente inventado. Los componentes A y B y la propiedad «material» son datos ilustrativos; no reproducen identificadores ni propiedades internas.</p>
+        <div class="case-table-wrap">
+          <table class="case-table">
+            <caption>Demostración ficticia del criterio de revisión</caption>
+            <thead><tr><th scope="col">Componente ficticio</th><th scope="col">Datos comparados</th><th scope="col">Decisión de revisión</th></tr></thead>
+            <tbody>
+            <tr><td data-label="Componente ficticio">A</td><td data-label="Datos comparados">Modelo: material vacío. Referencia: acero.</td><td data-label="Decisión de revisión">Señalar el dato ausente y proponer completarlo solo si la referencia está validada.</td></tr>
+            <tr><td data-label="Componente ficticio">B</td><td data-label="Datos comparados">Modelo: aluminio. Referencia: acero.</td><td data-label="Decisión de revisión">Registrar el conflicto. Sin precedencia inequívoca, pedir revisión antes de modificar.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="example-outcome">El informe distingue ausencia y conflicto, identifica la fuente de cada valor y deja la decisión ambigua pendiente de intervención técnica.</p>
+      </section>
+      <section class="case-evidence" id="evidence" aria-labelledby="evidence-title">
+        <h2 id="evidence-title">Comprobaciones y alcance</h2>
+        <div class="evidence-columns">
+          <div><h3>Qué comprobé</h3><ul>
+            <li>Correspondencia de elementos y consistencia de propiedades en las partes del flujo comprobadas.</li>
+            <li>Pruebas funcionales y de regresión para detectar cambios no previstos.</li>
+            <li>Revisión de resultados y preparación de distribuciones para otros entornos de usuario.</li>
+          </ul></div>
+          <div><h3>Límites y estado</h3><p>Las validaciones son parciales y no acreditan un despliegue global. Mi contribución combinó requisitos, integración, criterio de ingeniería y pruebas; el desarrollo se realizó con apoyo de IA.</p></div>
+        </div>
+        <div class="case-maturity"><div><h3>Implementado y probado parcialmente</h3><p>Tratamiento y comparación de información, controles de consistencia y comprobaciones sobre partes del flujo.</p></div><div><h3>Propuesto o en evolución</h3><p>Flujos de recuperación y nuevas capacidades de alineamiento de ensamblajes. Las especificaciones no se presentan como funciones terminadas ni validadas en todos los escenarios.</p></div></div>
+      </section>
+      <section class="case-learning"><h2>Criterio transferible</h2><p>Automatizar una comparación no equivale a automatizar una decisión: los conflictos necesitan reglas explícitas o intervención técnica.</p></section>
+      <p class="case-editorial-note">Caso anonimizado. Solo se muestran ilustraciones originales y ejemplos inventados; no documentación ni datos de clientes.</p>
+      <nav class="project-pagination" aria-label="Otros trabajos">
+        <a href="../index.html#ingecid-projects">← Trabajos en INGECID</a>
+        <a href="./ingecid-procesos.html">Seguimiento documental con Excel y Power BI →</a>
+      </nav>
     </div>
   </main>
   <footer class="project-footer"><div class="container"><p>Manuel Fernández Álvarez · Portfolio de ingeniería</p><a href="mailto:manuelffedezal@gmail.com">Contacto →</a></div></footer>

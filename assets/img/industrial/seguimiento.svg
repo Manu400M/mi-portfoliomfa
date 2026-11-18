@@ -1,37 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-  <title id="title">Seguimiento conceptual de entregables y revisiones</title>
-  <desc id="desc">Tabla ilustrativa con documentos y estados de revisión, conectada a una vista esquemática de seguimiento. No contiene métricas ni registros reales.</desc>
-  <defs>
-    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#102435"/><stop offset="1" stop-color="#1b414b"/></linearGradient>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#7aa3ad" stroke-opacity=".08" stroke-width="1"/></pattern>
-  </defs>
-  <rect width="1200" height="720" fill="url(#background)"/><rect width="1200" height="720" fill="url(#grid)"/>
-  <rect x="83" y="154" width="679" height="408" rx="13" fill="#102a3a" stroke="#4b7481" stroke-width="2"/>
-  <path d="M83 223H762M83 307H762M83 391H762M83 475H762M443 154V562" stroke="#355b69" stroke-width="2" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="tracking-title tracking-desc">
+  <title id="tracking-title">Estados e incidencias en un seguimiento documental ficticio</title>
+  <desc id="tracking-desc">Un entregable preparado pasa a revisión. La comprobación puede conducir a una observación o a su aceptación. Una observación abierta vuelve a revisión. Es un diagrama conceptual de datos ficticios, no un flujo ni un registro de una organización.</desc>
+  <defs><linearGradient id="tracking-bg" x2="1" y2="1"><stop stop-color="#102435"/><stop offset="1" stop-color="#1b414b"/></linearGradient></defs>
+  <rect width="1200" height="720" fill="url(#tracking-bg)"/>
   <g font-family="Segoe UI,Arial,sans-serif">
-    <text x="121" y="199" fill="#9fddd3" font-size="26" font-weight="600">Documento</text>
-    <text x="480" y="199" fill="#9fddd3" font-size="26" font-weight="600">Estado</text>
-    <g fill="#7195a3" opacity=".5">
-      <rect x="121" y="254" width="236" height="11" rx="5"/><rect x="121" y="275" width="148" height="7" rx="3"/>
-      <rect x="121" y="338" width="189" height="11" rx="5"/><rect x="121" y="359" width="238" height="7" rx="3"/>
-      <rect x="121" y="422" width="246" height="11" rx="5"/><rect x="121" y="443" width="158" height="7" rx="3"/>
-      <rect x="121" y="506" width="211" height="11" rx="5"/><rect x="121" y="527" width="169" height="7" rx="3"/>
+    <text x="64" y="80" fill="#e9f4f5" font-size="40" font-weight="600">Cada revisión tiene un estado.</text>
+    <g fill="#13303f" stroke="#6b97a2" stroke-width="2">
+      <rect x="76" y="182" width="280" height="134" rx="13"/>
+      <rect x="456" y="182" width="280" height="134" rx="13"/>
+      <rect x="836" y="182" width="280" height="134" rx="13"/>
+      <rect x="266" y="435" width="280" height="134" rx="13"/>
+      <rect x="836" y="435" width="280" height="134" rx="13"/>
     </g>
-    <g font-size="24">
-      <text x="480" y="276" fill="#b8d5db">En revisión</text>
-      <text x="480" y="360" fill="#9eafb9">Pendiente</text>
-      <text x="480" y="444" fill="#b8d5db">En revisión</text>
-      <text x="480" y="528" fill="#9eafb9">Pendiente</text>
+    <g fill="#e8f4f3" font-size="36" text-anchor="middle">
+      <text x="216" y="260">Preparado</text><text x="596" y="260">En revisión</text><text x="976" y="260">Comprobar</text>
+      <text x="406" y="513">Observado</text><text x="976" y="513">Aceptado</text>
     </g>
-    <rect x="824" y="170" width="290" height="187" rx="13" fill="#173443" stroke="#4b7481" stroke-width="2"/>
-    <text x="858" y="218" fill="#e3f1f3" font-size="26" font-weight="600">Seguimiento</text>
-    <path d="M860 251H1074M860 281H1025M860 311H1056" stroke="#7599a5" stroke-width="10" stroke-linecap="round" opacity=".6"/>
-    <rect x="824" y="391" width="290" height="171" rx="13" fill="#173443" stroke="#4b7481" stroke-width="2"/>
-    <text x="858" y="439" fill="#e3f1f3" font-size="26" font-weight="600">Trazabilidad</text>
-    <path d="M870 491H1065" stroke="#6ca9ad" stroke-width="2"/>
-    <g fill="#102a3a" stroke="#8bd8cd" stroke-width="3"><circle cx="870" cy="491" r="13"/><circle cx="969" cy="491" r="13"/><circle cx="1065" cy="491" r="13"/></g>
-    <text x="83" y="87" fill="#98d9d0" font-size="17" letter-spacing="3">ENTREGABLES Y REVISIONES</text>
-    <text x="83" y="634" fill="#c1d6dc" font-size="25">Información relacionada. Estados revisables.</text>
-    <text x="83" y="674" fill="#a3bcc6" font-size="17" letter-spacing="1.4">EJEMPLO CONCEPTUAL · SIN REGISTROS NI MÉTRICAS REALES</text>
+    <g fill="none" stroke="#8bcfc4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M372 249H438M420 233L438 249L420 265"/>
+      <path d="M752 249H818M800 233L818 249L800 265"/>
+      <path d="M976 333V416M960 398L976 416L992 398"/>
+      <path d="M871 332V395H564V416M548 400L564 416L580 400"/>
+      <path d="M320 416V358H538V335M522 352L538 335L554 352"/>
+    </g>
+    <text x="1012" y="385" fill="#c9e7e0" font-size="30">Criterios</text>
+    <text x="580" y="375" fill="#d8c9a8" font-size="30">Observación abierta</text>
+    <text x="280" y="617" fill="#bbd5dc" font-size="30">Corregir y volver a comprobar</text>
+    <text x="64" y="680" fill="#aec8d1" font-size="28">Ilustración conceptual · estados y datos ficticios</text>
   </g>
 </svg>

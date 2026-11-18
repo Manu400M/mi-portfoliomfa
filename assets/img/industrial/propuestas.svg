@@ -1,33 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-  <title id="title">Preparación conceptual de borradores de documentación técnica</title>
-  <desc id="desc">Una solicitud y una hoja de mediciones se relacionan con un borrador de documento sujeto a revisión. No representa plantillas, ofertas ni datos comerciales reales.</desc>
-  <defs>
-    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#0b1828"/><stop offset="1" stop-color="#22454e"/></linearGradient>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#7aa3ad" stroke-opacity=".08" stroke-width="1"/></pattern>
-  </defs>
-  <rect width="1200" height="720" fill="url(#background)"/><rect width="1200" height="720" fill="url(#grid)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="proposal-title proposal-desc">
+  <title id="proposal-title">Preparación conceptual de un borrador técnico</title>
+  <desc id="proposal-desc">Una solicitud y una hoja de mediciones convergen en un punto de validación. Después se genera un borrador que debe pasar a revisión humana. No contiene plantillas corporativas ni información comercial real. Ilustración conceptual de datos ficticios.</desc>
+  <defs><linearGradient id="proposal-bg" x2="1" y2="1"><stop stop-color="#0b1828"/><stop offset="1" stop-color="#22454e"/></linearGradient></defs>
+  <rect width="1200" height="720" fill="url(#proposal-bg)"/>
   <g font-family="Segoe UI,Arial,sans-serif">
-    <rect x="91" y="168" width="244" height="351" rx="10" fill="#1c3a48" stroke="#628e99" stroke-width="2" transform="rotate(-5 213 343)"/>
-    <g transform="rotate(-5 213 343)">
-      <text x="119" y="219" fill="#dfeff1" font-size="27" font-weight="600">Solicitud</text>
-      <path d="M119 252H300M119 279H283M119 306H298M119 333H247M119 388H297M119 415H272M119 442H294" fill="none" stroke="#7396a1" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+    <text x="64" y="80" fill="#e9f4f5" font-size="40" font-weight="600">De los datos a un borrador revisable.</text>
+    <g fill="#173a49" stroke="#709ca6" stroke-width="2">
+      <rect x="70" y="172" width="280" height="173" rx="12"/>
+      <rect x="70" y="393" width="280" height="173" rx="12"/>
     </g>
-    <rect x="302" y="263" width="249" height="310" rx="10" fill="#143240" stroke="#77b0b5" stroke-width="2" transform="rotate(4 426 418)"/>
-    <g transform="rotate(4 426 418)">
-      <text x="327" y="315" fill="#b5e7de" font-size="26" font-weight="600">Mediciones</text>
-      <path d="M327 345H526M327 388H526M327 431H526M327 474H526M327 517H526M444 345V517" stroke="#527d89" stroke-width="2" fill="none"/>
-      <g fill="#779ba4" opacity=".65"><rect x="337" y="361" width="83" height="7" rx="3"/><rect x="337" y="404" width="69" height="7" rx="3"/><rect x="337" y="447" width="76" height="7" rx="3"/><rect x="337" y="490" width="58" height="7" rx="3"/></g>
-    </g>
-    <path d="M581 366H685" fill="none" stroke="#8bd8cd" stroke-width="3"/>
-    <path d="M671 353L685 366L671 379" fill="none" stroke="#8bd8cd" stroke-width="3"/>
-    <rect x="737" y="152" width="354" height="422" rx="12" fill="#e6eef0"/>
-    <path d="M990 152V214H1091" fill="#c2d4d9"/>
-    <text x="774" y="253" fill="#173747" font-size="29" font-weight="600">Borrador técnico</text>
-    <path d="M774 286H1055" stroke="#acc3cb" stroke-width="2"/>
-    <path d="M774 324H1034M774 352H1008M774 380H1049M774 408H973" fill="none" stroke="#6e929e" stroke-width="9" stroke-linecap="round" opacity=".75"/>
-    <rect x="774" y="453" width="208" height="57" rx="6" fill="#d2e3e5" stroke="#658f98" stroke-width="1.5"/>
-    <text x="878" y="488" text-anchor="middle" fill="#244e5b" font-size="22">Para revisión</text>
-    <text x="83" y="87" fill="#98d9d0" font-size="17" letter-spacing="3">AUTOMATIZACIÓN DOCUMENTAL</text>
-    <text x="83" y="663" fill="#a3bcc6" font-size="17" letter-spacing="1.4">ILUSTRACIÓN CONCEPTUAL · SIN DATOS COMERCIALES</text>
+    <g fill="#d7eceb" font-size="34" text-anchor="middle"><text x="210" y="232">Solicitud</text><text x="210" y="453">Mediciones</text></g>
+    <path d="M110 267H307M110 298H265" stroke="#6b95a2" stroke-width="10" stroke-linecap="round"/>
+    <path d="M110 483H310M110 514H310M180 474V537M249 474V537" fill="none" stroke="#6b95a2" stroke-width="3"/>
+    <path d="M369 257H408V375H458M369 478H408V375M442 359L458 375L442 391" fill="none" stroke="#92d9cf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="478" y="298" width="245" height="154" rx="13" fill="#1d4855" stroke="#8bc5c4" stroke-width="2"/>
+    <text x="600" y="366" text-anchor="middle" fill="#e2f2ef" font-size="34">Validar</text>
+    <text x="600" y="412" text-anchor="middle" fill="#b8d9d9" font-size="30">antes de generar</text>
+    <path d="M742 375H804M788 359L804 375L788 391" fill="none" stroke="#92d9cf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M826 184H1052L1122 254V566H826Z" fill="#e3eef0"/>
+    <path d="M1052 184V254H1122" fill="#b4cfd5"/>
+    <text x="974" y="317" text-anchor="middle" fill="#173747" font-size="36" font-weight="600">Borrador</text>
+    <path d="M869 352H1078M869 389H1041M869 426H1076" stroke="#7f9faa" stroke-width="10" stroke-linecap="round"/>
+    <rect x="855" y="475" width="238" height="58" rx="8" fill="#c4dde0"/>
+    <text x="974" y="515" text-anchor="middle" fill="#244b58" font-size="30">Revisión humana</text>
+    <text x="64" y="680" fill="#aec8d1" font-size="28">Ilustración conceptual · documentos y datos ficticios</text>
   </g>
 </svg>

@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Preparación de borradores de ofertas técnicas | Manuel Fernández Álvarez</title>
-  <meta name="description" content="Diseño funcional y pruebas de un prototipo Python para transformar solicitudes estructuradas y hojas de mediciones en borradores de documentación técnico-comercial." />
+  <meta name="description" content="Diseño funcional y pruebas de un prototipo Python que relaciona solicitudes estructuradas y mediciones para generar borradores técnico-comerciales revisables." />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/hvv-projects.css" />
   <link rel="stylesheet" href="../css/industrial-projects.css" />
   <meta property="og:title" content="Preparación de borradores de ofertas técnicas | Manuel Fernández Álvarez" />
-  <meta property="og:description" content="Diseño funcional y pruebas de un prototipo Python para transformar solicitudes estructuradas y hojas de mediciones en borradores de documentación técnico-comercial." />
+  <meta property="og:description" content="Diseño funcional y pruebas de un prototipo Python que relaciona solicitudes estructuradas y mediciones para generar borradores técnico-comerciales revisables." />
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Manuel Fernández Álvarez · Portfolio" />
@@ -22,43 +22,93 @@
 </head>
 <body class="project-page industrial-page">
   <a class="skip-link" href="#project-main">Ir al contenido</a>
-  <header><div class="container nav"><a class="brand" href="../index.html"><span class="symbol">M·F</span><span>Manuel Fernández Álvarez</span></a><nav class="navlinks" aria-label="Navegación del caso"><a href="../index.html#ingecid-projects">INGECID</a><a href="#development">Desarrollo</a><a href="#evidence">Estado y evidencia</a></nav></div></header>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html"><span class="symbol">M·F</span><span>Manuel Fernández Álvarez</span></a>
+      <nav class="navlinks" aria-label="Navegación del caso">
+        <a href="../index.html#ingecid-projects">INGECID</a>
+        <a href="#development">Desarrollo</a>
+        <a href="#evidence">Evidencia y límites</a>
+      </nav>
+    </div>
+  </header>
   <main id="project-main">
-    <section class="project-hero"><div class="container project-intro">
-      <div><a class="project-back" href="../index.html#ingecid-projects">← Trabajos en INGECID</a><p class="kicker">AUTOMATIZACIÓN DOCUMENTAL</p><h1>Preparación de borradores de ofertas técnicas</h1><p class="case-lead-state case-status">Prototipo probado · desarrollo asistido por IA</p><p class="project-subtitle">Datos de origen, validación y revisión humana</p><p class="project-summary">Diseño funcional y pruebas de un prototipo Python para transformar solicitudes estructuradas y hojas de mediciones en borradores de documentación técnico-comercial.</p><a class="btn primary" href="#development">Explorar el trabajo ↓</a></div>
-      <figure class="industrial-case-figure conceptual-case-image">
-        <img src="../assets/img/industrial/propuestas.svg" alt="Esquema conceptual de entradas documentales y un borrador técnico revisable" width="1200" height="720" />
-        <figcaption>Ilustración conceptual original, sin datos de proyecto. No es una captura de la herramienta.</figcaption>
-      </figure>
-    </div></section>
-    <div class="container project-body">
-      <section class="project-contribution" aria-labelledby="contribution-title"><div><div class="kicker">MI CONTRIBUCIÓN</div><h2 id="contribution-title">Qué hice</h2></div><ul>
-          <li>Definición de requisitos funcionales y preparación de especificaciones.</li>
-          <li>Iteraciones de diseño, integración y desarrollo asistido por IA.</li>
-          <li>Pruebas de validación y revisión de los documentos generados frente a los datos de origen.</li>
-      </ul></section>
-      <div class="project-story" id="development">
-        <section><h2>Problema de ingeniería</h2><p>Preparar documentación técnico-comercial a partir de solicitudes, mediciones y plantillas implica repetir información y comprobar correspondencias entre distintas fuentes.</p></section>
-        <section><h2>Objetivo y alcance</h2><p>Conectar las entradas estructuradas con un borrador documental revisable, haciendo visibles las asociaciones ambiguas y los datos que requieren comprobación.</p></section>
-        <section><h2>Enfoque y decisiones</h2><p>Diseño y pruebas de una aplicación de escritorio con revisión de datos antes de generar documentos. El prototipo combina solicitudes estructuradas, mediciones de Excel y plantillas de Word. La importación directa de correos se estudió como posible evolución.</p></section>
-        <section><h2>Herramientas utilizadas</h2><p>Python y Tkinter para la aplicación de escritorio, Excel como fuente de mediciones y Word para los borradores documentales.</p></section>
+    <section class="project-hero">
+      <div class="container project-intro">
+        <div>
+          <a class="project-back" href="../index.html#ingecid-projects">← Trabajos en INGECID</a>
+          <p class="kicker">VALIDACIÓN DE ENTRADAS · GENERACIÓN DOCUMENTAL</p>
+          <h1>Preparación de borradores de ofertas técnicas</h1>
+          <p class="case-lead-state case-status">Prototipo probado · desarrollo asistido por IA</p>
+          <p class="project-summary">Diseño funcional y pruebas de un prototipo Python que relaciona solicitudes estructuradas y mediciones para generar borradores técnico-comerciales revisables.</p>
+          <a class="btn primary" href="#example">Ver el ejemplo sintético ↓</a>
+        </div>
+        <figure class="industrial-case-figure">
+          <img src="../assets/img/industrial/propuestas.svg" alt="Esquema original de solicitud y mediciones transformadas en un borrador sujeto a revisión." width="1200" height="720" />
+          <figcaption>Ilustración conceptual original con geometrías y datos ficticios.</figcaption>
+        </figure>
       </div>
-      <section class="industrial-workflow" id="workflow" aria-labelledby="workflow-title"><div class="kicker">ESQUEMA CONCEPTUAL RECREADO</div><h2 id="workflow-title">Cómo se conecta el trabajo.</h2><ol>
-          <li><span class="workflow-number">01</span><div><h3>Entradas</h3><p>Solicitud estructurada y mediciones</p></div></li>
-          <li><span class="workflow-number">02</span><div><h3>Validación</h3><p>Datos obligatorios y correspondencias</p></div></li>
-          <li><span class="workflow-number">03</span><div><h3>Borrador</h3><p>Documento técnico-comercial</p></div></li>
-          <li><span class="workflow-number">04</span><div><h3>Revisión</h3><p>Verificación humana antes de su uso</p></div></li>
-      </ol></section>
-      <section class="case-example" aria-labelledby="example-title"><div class="kicker">LECTURA DEL PROCESO</div><h2 id="example-title">De la solicitud al borrador revisable</h2><dl>
-          <div><dt>Solicitud</dt><dd>Describe la necesidad de trabajo.</dd></div>
-          <div><dt>Mediciones</dt><dd>Aporta conceptos y unidades.</dd></div>
-          <div><dt>Correspondencias</dt><dd>Se revisan antes de generar documentos.</dd></div>
-          <div><dt>Borrador</dt><dd>Permanece sujeto a revisión humana.</dd></div>
-      </dl><p class="workflow-note">Ilustración genérica: no representa registros ni salidas de herramientas de empresa.</p></section>
-      <section class="case-evidence" id="evidence" aria-labelledby="evidence-title"><div class="kicker">VALIDACIÓN Y ALCANCE</div><h2 id="evidence-title">Evidencia y límites.</h2><div class="evidence-columns"><div><h3>Trabajo y comprobaciones</h3><p>Pruebas automatizadas e iteraciones de verificación de salidas. Los borradores se contrastaron con la información de origen, manteniendo la revisión humana como parte del flujo.</p></div><div><h3>Estado del caso</h3><p class="evidence-state">Prototipo probado · desarrollo asistido por IA</p><p>Prototipo diseñado y probado; no se afirma una implantación completa en producción. Los documentos generados son borradores para revisión, no ofertas aprobadas ni contratos adjudicados.</p></div></div></section>
-      <section class="case-learning"><h2>Aprendizaje técnico.</h2><p>La generación documental necesita validar las entradas y mantener la trazabilidad hasta la fuente. Las pruebas de software complementan, pero no sustituyen, la revisión técnica y comercial.</p></section>
-      <p class="case-editorial-note">Descripción anonimizada y esquemas originales. No se publican modelos, documentos ni datos de clientes.</p>
-      <nav class="project-pagination" aria-label="Otros trabajos"><a href="../index.html#ingecid-projects">← Trabajos en INGECID</a><a href="./ingecid-revision-tecnica.html">Verificación de entregables de ingeniería →</a></nav>
+    </section>
+    <div class="container project-body">
+      <section class="case-problem" id="development" aria-labelledby="problem-title">
+        <div class="kicker">CONTEXTO</div>
+        <h2 id="problem-title">El problema</h2>
+        <p>Una solicitud, una hoja de mediciones y una plantilla documental describen el trabajo de maneras distintas. Asociar conceptos, cantidades y unidades exige comprobar campos obligatorios y correspondencias ambiguas antes de trasladar datos a un borrador.</p>
+      </section>
+      <section class="project-contribution" aria-labelledby="contribution-title">
+        <div><div class="kicker">MI CONTRIBUCIÓN</div><h2 id="contribution-title">Qué hice</h2></div>
+        <ul>
+          <li>Definí requisitos funcionales y preparé especificaciones del flujo documental.</li>
+          <li>Participé en iteraciones de diseño, integración y desarrollo asistido por IA.</li>
+          <li>Realicé pruebas de validación de entradas y contrasté los documentos generados con los datos de origen.</li>
+        </ul>
+      </section>
+      <section class="industrial-workflow" aria-labelledby="workflow-title">
+        <h2 id="workflow-title">Cómo lo abordé</h2>
+        <p class="method-intro">Revisar las entradas antes de generar el documento y conservar la relación con su fuente. Python y Tkinter soportaron la aplicación de escritorio; Excel aportó las mediciones y Word las plantillas del borrador. La importación directa de correos se estudió como posible evolución, sin presentarla como función terminada.</p>
+        <ol aria-label="Etapas del método">
+          <li><span class="workflow-number">01</span><div><h3>Entradas</h3><p>Solicitud estructurada y hoja de mediciones.</p></div></li>
+          <li><span class="workflow-number">02</span><div><h3>Validaciones</h3><p>Obligatorios, unidades y correspondencias.</p></div></li>
+          <li><span class="workflow-number">03</span><div><h3>Borrador</h3><p>Documento con datos de origen revisados.</p></div></li>
+          <li><span class="workflow-number">04</span><div><h3>Revisión humana</h3><p>Comprobación técnica y comercial antes de su uso.</p></div></li>
+        </ol>
+      </section>
+      <section class="case-example" id="example" aria-labelledby="example-title">
+        <div class="kicker">EJEMPLO SINTÉTICO · DATOS FICTICIOS</div>
+        <h2 id="example-title">Una unidad ausente y una asociación ambigua requieren revisión.</h2>
+        <p>Ejemplo inventado, sin clientes, contactos, precios ni condiciones económicas. Las cantidades se muestran únicamente para explicar la validación.</p>
+        <div class="case-table-wrap">
+          <table class="case-table">
+            <caption>Demostración ficticia del criterio de revisión</caption>
+            <thead><tr><th scope="col">Entrada ficticia</th><th scope="col">Comprobación</th><th scope="col">Tratamiento ilustrativo</th></tr></thead>
+            <tbody>
+            <tr><td data-label="Entrada ficticia">Solicitud: revisión de un modelo</td><td data-label="Comprobación">La actividad solicitada tiene una descripción.</td><td data-label="Tratamiento ilustrativo">Relacionarla con la medición propuesta.</td></tr>
+            <tr><td data-label="Entrada ficticia">Medición: cantidad 2; unidad sin indicar</td><td data-label="Comprobación">Falta un dato obligatorio.</td><td data-label="Tratamiento ilustrativo">Solicitar la unidad antes de generar el borrador.</td></tr>
+            <tr><td data-label="Entrada ficticia">Descripción genérica: «apoyo técnico»</td><td data-label="Comprobación">Hay más de una correspondencia posible.</td><td data-label="Tratamiento ilustrativo">Pedir revisión; no elegir una asociación por defecto.</td></tr>
+            <tr><td data-label="Entrada ficticia">Entradas aclaradas y revisadas</td><td data-label="Comprobación">Obligatorios y correspondencias resueltos.</td><td data-label="Tratamiento ilustrativo">Generar un borrador sujeto a revisión humana.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="example-outcome">El resultado sería un documento revisable vinculado a las entradas comprobadas, no una oferta aprobada ni un compromiso comercial.</p>
+      </section>
+      <section class="case-evidence" id="evidence" aria-labelledby="evidence-title">
+        <h2 id="evidence-title">Comprobaciones y alcance</h2>
+        <div class="evidence-columns">
+          <div><h3>Qué comprobé</h3><ul>
+            <li>Pruebas automatizadas e iteraciones de verificación de salidas del prototipo.</li>
+            <li>Comprobación de campos obligatorios y correspondencias antes de generar documentos.</li>
+            <li>Contraste de borradores con la información de origen.</li>
+          </ul></div>
+          <div><h3>Límites y estado</h3><p>Prototipo diseñado y probado con desarrollo asistido por IA. No se afirma una implantación completa en producción. La generación de un borrador no sustituye la aprobación técnica o comercial.</p></div>
+        </div>
+
+      </section>
+      <section class="case-learning"><h2>Criterio transferible</h2><p>Validar las entradas y sus correspondencias es tan importante como generar el documento; la revisión humana sigue siendo parte del proceso.</p></section>
+      <p class="case-editorial-note">Caso anonimizado. Solo se muestran ilustraciones originales y ejemplos inventados; no documentación ni datos de clientes.</p>
+      <nav class="project-pagination" aria-label="Otros trabajos">
+        <a href="../index.html#ingecid-projects">← Trabajos en INGECID</a>
+        <a href="./ingecid-revision-tecnica.html">Verificación de entregables de ingeniería →</a>
+      </nav>
     </div>
   </main>
   <footer class="project-footer"><div class="container"><p>Manuel Fernández Álvarez · Portfolio de ingeniería</p><a href="mailto:manuelffedezal@gmail.com">Contacto →</a></div></footer>
