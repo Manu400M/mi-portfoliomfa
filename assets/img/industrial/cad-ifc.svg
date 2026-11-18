@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="cad-title cad-desc">
+  <title id="cad-title">Reconciliación conceptual de información CAD e IFC</title>
+  <desc id="cad-desc">Un conjunto geométrico sintético y representaciones abstractas de propiedades ilustran un recorrido de datos: origen, correspondencia, incidencias y verificación. Las excepciones requieren revisión humana. Ilustración conceptual de datos ficticios, sin reproducir la arquitectura de una aplicación real.</desc>
+  <defs>
+    <linearGradient id="cad-bg" x2="1" y2="1"><stop stop-color="#0b1828"/><stop offset="1" stop-color="#173b49"/></linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#cad-bg)"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="64" y="80" fill="#e9f4f5" font-size="40" font-weight="600">Modelos conectados. Datos revisables.</text>
+    <g stroke="#7eafb8" stroke-width="3" stroke-linejoin="round">
+      <path d="M113 343L310 257L485 325L291 414Z" fill="#2a5a68"/>
+      <path d="M113 343V373L291 447V414Z" fill="#1e4353"/>
+      <path d="M291 414V447L485 355V325Z" fill="#143545"/>
+      <path d="M166 239L309 177L438 228L296 293Z" fill="#4f9296"/>
+      <path d="M166 239V268L296 321V293Z" fill="#326774"/>
+      <path d="M296 293V321L438 257V228Z" fill="#214d5e"/>
+      <ellipse cx="301" cy="237" rx="38" ry="17" fill="#112a3a"/>
+    </g>
+    <path d="M174 286V321M430 280V318" stroke="#527e8d" stroke-width="2" fill="none"/>
+    <path d="M523 305H593M576 290L593 305L576 320" fill="none" stroke="#92d9cf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#12303f" stroke="#557e8d" stroke-width="2">
+      <rect x="635" y="163" width="475" height="196" rx="13"/>
+      <rect x="635" y="386" width="475" height="73" rx="11"/>
+    </g>
+    <text x="672" y="217" fill="#ccebe5" font-size="34">Propiedades y referencias</text>
+    <path d="M672 244H1074" stroke="#456c7b" stroke-width="2"/>
+    <path d="M673 280H873M673 318H840" stroke="#6a94a1" stroke-width="11" stroke-linecap="round"/>
+    <path d="M974 268L989 283L1016 255" fill="none" stroke="#92d9cf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="991" cy="320" r="17" fill="none" stroke="#d6c69f" stroke-width="3"/>
+    <text x="872" y="433" text-anchor="middle" fill="#dcebef" font-size="32">Revisión humana</text>
+    <g fill="#183e4c" stroke="#648f9b" stroke-width="2">
+      <rect x="64" y="523" width="236" height="95" rx="11"/>
+      <rect x="344" y="523" width="236" height="95" rx="11"/>
+      <rect x="624" y="523" width="236" height="95" rx="11"/>
+      <rect x="904" y="523" width="232" height="95" rx="11"/>
+    </g>
+    <g fill="#e8f4f3" font-size="32" text-anchor="middle">
+      <text x="182" y="580">Origen</text><text x="462" y="580">Conciliar</text><text x="742" y="580">Incidencias</text><text x="1020" y="580">Verificar</text>
+    </g>
+    <path d="M308 570H335M327 562L335 570L327 578M588 570H615M607 562L615 570L607 578M868 570H895M887 562L895 570L887 578" fill="none" stroke="#92d9cf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="64" y="680" fill="#aec8d1" font-size="28">Ilustración conceptual · geometría y datos ficticios</text>
+  </g>
+</svg>

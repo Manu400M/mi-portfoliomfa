@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="verification-title verification-desc">
+  <title id="verification-title">Contraste de representaciones de un conjunto sintético</title>
+  <desc id="verification-desc">Un ensamblaje geométrico inventado se relaciona con cuatro fuentes: modelo CAD, plano, lista de materiales y requisitos. Las comprobaciones pueden confirmar una correspondencia o dejar un punto para revisión. Ilustración conceptual con geometría y datos ficticios, sin información de proyectos.</desc>
+  <defs>
+    <linearGradient id="verification-bg" x2="1" y2="1"><stop stop-color="#0b1828"/><stop offset="1" stop-color="#183d49"/></linearGradient>
+    <linearGradient id="verification-top" x2="1" y2="1"><stop stop-color="#3d7b82"/><stop offset="1" stop-color="#214c5c"/></linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#verification-bg)"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="64" y="80" fill="#e9f4f5" font-size="40" font-weight="600">Una geometría. Varias fuentes.</text>
+    <g stroke="#8dbec4" stroke-width="3" stroke-linejoin="round">
+      <path d="M92 417L304 320L516 405L304 505Z" fill="url(#verification-top)"/>
+      <path d="M92 417V451L304 540V505Z" fill="#214a59"/>
+      <path d="M304 505V540L516 439V405Z" fill="#173444"/>
+      <path d="M188 345L304 291L419 335L304 390Z" fill="#4e9295"/>
+      <path d="M188 345V389L304 438V390Z" fill="#315f6b"/>
+      <path d="M304 390V438L419 382V335Z" fill="#224956"/>
+      <path d="M211 269L304 226L398 263L304 307Z" fill="#6eb0ac"/>
+      <path d="M211 269V299L304 338V307Z" fill="#427e83"/>
+      <path d="M304 307V338L398 292V263Z" fill="#2b5c69"/>
+      <ellipse cx="304" cy="267" rx="30" ry="13" fill="#102b3b"/>
+    </g>
+    <path d="M304 193V224M304 540V570" fill="none" stroke="#638c97" stroke-width="2"/>
+    <text x="304" y="616" text-anchor="middle" fill="#bdd4db" font-size="30">Conjunto de ejemplo</text>
+    <path d="M545 385H609M592 370L609 385L592 400" fill="none" stroke="#92d9cf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#112d3d" stroke="#608a97" stroke-width="2">
+      <rect x="650" y="174" width="220" height="142" rx="13"/>
+      <rect x="902" y="174" width="220" height="142" rx="13"/>
+      <rect x="650" y="350" width="220" height="142" rx="13"/>
+      <rect x="902" y="350" width="220" height="142" rx="13"/>
+    </g>
+    <g fill="#ecf5f6" font-size="36" text-anchor="middle">
+      <text x="760" y="242">CAD</text><text x="1012" y="242">Plano</text>
+      <text x="760" y="418">BOM</text><text x="1012" y="418">Requisitos</text>
+    </g>
+    <g fill="none" stroke="#92d9cf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M741 275L753 287L779 263"/>
+      <path d="M993 275L1005 287L1031 263"/>
+      <path d="M993 451L1005 463L1031 439"/>
+    </g>
+    <g fill="none" stroke="#d6c69f" stroke-width="3"><circle cx="760" cy="452" r="18"/><path d="M760 441V455"/><circle cx="760" cy="463" r="1" fill="#d6c69f"/></g>
+    <rect x="650" y="534" width="472" height="76" rx="10" fill="#214550"/>
+    <text x="886" y="581" text-anchor="middle" fill="#cfebe6" font-size="32">Contrastar y registrar</text>
+    <text x="64" y="680" fill="#aec8d1" font-size="28">Ilustración conceptual · geometría y datos ficticios</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="tracking-title tracking-desc">
+  <title id="tracking-title">Estados e incidencias en un seguimiento documental ficticio</title>
+  <desc id="tracking-desc">Un entregable preparado pasa a revisión. La comprobación puede conducir a una observación o a su aceptación. Una observación abierta vuelve a revisión. Es un diagrama conceptual de datos ficticios, no un flujo ni un registro de una organización.</desc>
+  <defs><linearGradient id="tracking-bg" x2="1" y2="1"><stop stop-color="#102435"/><stop offset="1" stop-color="#1b414b"/></linearGradient></defs>
+  <rect width="1200" height="720" fill="url(#tracking-bg)"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="64" y="80" fill="#e9f4f5" font-size="40" font-weight="600">Cada revisión tiene un estado.</text>
+    <g fill="#13303f" stroke="#6b97a2" stroke-width="2">
+      <rect x="76" y="182" width="280" height="134" rx="13"/>
+      <rect x="456" y="182" width="280" height="134" rx="13"/>
+      <rect x="836" y="182" width="280" height="134" rx="13"/>
+      <rect x="266" y="435" width="280" height="134" rx="13"/>
+      <rect x="836" y="435" width="280" height="134" rx="13"/>
+    </g>
+    <g fill="#e8f4f3" font-size="36" text-anchor="middle">
+      <text x="216" y="260">Preparado</text><text x="596" y="260">En revisión</text><text x="976" y="260">Comprobar</text>
+      <text x="406" y="513">Observado</text><text x="976" y="513">Aceptado</text>
+    </g>
+    <g fill="none" stroke="#8bcfc4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M372 249H438M420 233L438 249L420 265"/>
+      <path d="M752 249H818M800 233L818 249L800 265"/>
+      <path d="M976 333V416M960 398L976 416L992 398"/>
+      <path d="M871 332V395H564V416M548 400L564 416L580 400"/>
+      <path d="M320 416V358H538V335M522 352L538 335L554 352"/>
+    </g>
+    <text x="1012" y="385" fill="#c9e7e0" font-size="30">Criterios</text>
+    <text x="580" y="375" fill="#d8c9a8" font-size="30">Observación abierta</text>
+    <text x="280" y="617" fill="#bbd5dc" font-size="30">Corregir y volver a comprobar</text>
+    <text x="64" y="680" fill="#aec8d1" font-size="28">Ilustración conceptual · estados y datos ficticios</text>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seguimiento documental con Excel y Power BI | Manuel Fernández Álvarez</title>
+  <meta name="description" content="Desarrollo y ajuste de flujos Excel/VBA para relacionar entregables, revisiones e incidencias y preparar datos coherentes para Power BI." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/hvv-projects.css" />
+  <link rel="stylesheet" href="../css/industrial-projects.css" />
+  <meta property="og:title" content="Seguimiento documental con Excel y Power BI | Manuel Fernández Álvarez" />
+  <meta property="og:description" content="Desarrollo y ajuste de flujos Excel/VBA para relacionar entregables, revisiones e incidencias y preparar datos coherentes para Power BI." />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Manuel Fernández Álvarez · Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#0b1828" />
+  <link rel="canonical" href="https://mi-portfoliomfanvv.vercel.app/pages/ingecid-procesos.html" />
+  <meta property="og:url" content="https://mi-portfoliomfanvv.vercel.app/pages/ingecid-procesos.html" />
+  <meta property="og:image" content="https://mi-portfoliomfanvv.vercel.app/assets/img/companies/ingecid.png" />
+  <meta property="og:image:alt" content="Seguimiento documental con Excel y Power BI | Manuel Fernández Álvarez" />
+</head>
+<body class="project-page industrial-page">
+  <a class="skip-link" href="#project-main">Ir al contenido</a>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html"><span class="symbol">M·F</span><span>Manuel Fernández Álvarez</span></a>
+      <nav class="navlinks" aria-label="Navegación del caso">
+        <a href="../index.html#ingecid-projects">INGECID</a>
+        <a href="#development">Desarrollo</a>
+        <a href="#evidence">Evidencia y límites</a>
+      </nav>
+    </div>
+  </header>
+  <main id="project-main">
+    <section class="project-hero">
+      <div class="container project-intro">
+        <div>
+          <a class="project-back" href="../index.html#ingecid-projects">← Trabajos en INGECID</a>
+          <p class="kicker">AUTOMATIZACIÓN DE INFORMACIÓN DE INGENIERÍA</p>
+          <h1>Seguimiento documental con Excel y Power BI</h1>
+          <p class="case-lead-state case-status">Automatización funcional de seguimiento</p>
+          <p class="project-summary">Desarrollo y ajuste de flujos Excel/VBA para relacionar entregables, revisiones e incidencias y preparar datos coherentes para Power BI.</p>
+          <a class="btn primary" href="#example">Ver el ejemplo sintético ↓</a>
+        </div>
+        <figure class="industrial-case-figure">
+          <img src="../assets/img/industrial/seguimiento.svg" alt="Esquema original de entregables, revisiones y estados de seguimiento documental." width="1200" height="720" />
+          <figcaption>Ilustración conceptual original con geometrías y datos ficticios.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <div class="container project-body">
+      <section class="case-problem" id="development" aria-labelledby="problem-title">
+        <div class="kicker">CONTEXTO</div>
+        <h2 id="problem-title">El problema</h2>
+        <p>Un entregable puede tener varias revisiones y observaciones asociadas. Si el estado de aceptación se modifica sin comprobar esas relaciones, puede quedar aceptado un documento con incidencias abiertas o conservar una fecha que ya no corresponde a su estado.</p>
+      </section>
+      <section class="project-contribution" aria-labelledby="contribution-title">
+        <div><div class="kicker">MI CONTRIBUCIÓN</div><h2 id="contribution-title">Qué hice</h2></div>
+        <ul>
+          <li>Desarrollé y ajusté automatizaciones en Excel/VBA para seguimiento de entregables y revisiones.</li>
+          <li>Definí y revisé controles de coherencia entre estados, incidencias y aceptación.</li>
+          <li>Preparé datos estructurados para su tratamiento y presentación mediante Power BI.</li>
+        </ul>
+      </section>
+      <section class="industrial-workflow" aria-labelledby="workflow-title">
+        <h2 id="workflow-title">Cómo lo abordé</h2>
+        <p class="method-intro">Relacionar cada observación con su entregable y revisión; comprobar las condiciones antes de aceptar o cambiar el estado. Los ajustes de lógica y eventos VBA debían conservar la estructura utilizada por Power BI. El análisis de procesos As-Is/To-Be apoyó la representación del trabajo y las propuestas de mejora.</p>
+        <ol aria-label="Etapas del método">
+          <li><span class="workflow-number">01</span><div><h3>Preparado</h3><p>Documento listo para iniciar la revisión.</p></div></li>
+          <li><span class="workflow-number">02</span><div><h3>En revisión</h3><p>Contraste del entregable y sus observaciones.</p></div></li>
+          <li><span class="workflow-number">03</span><div><h3>Observado</h3><p>Una incidencia abierta puede bloquear la aceptación.</p></div></li>
+          <li><span class="workflow-number">04</span><div><h3>Aceptado</h3><p>Solo cuando se cumplen las reglas definidas.</p></div></li>
+        </ol>
+      </section>
+      <section class="case-example" id="example" aria-labelledby="example-title">
+        <div class="kicker">EJEMPLO SINTÉTICO · DATOS FICTICIOS</div>
+        <h2 id="example-title">Una observación abierta impide aceptar el documento.</h2>
+        <p>Secuencia ficticia simplificada para un documento de ejemplo. Los estados y decisiones ilustran la regla; no son un registro ni una captura del sistema utilizado.</p>
+        <div class="case-table-wrap">
+          <table class="case-table">
+            <caption>Demostración ficticia del criterio de revisión</caption>
+            <thead><tr><th scope="col">Momento ficticio</th><th scope="col">Estado e incidencia</th><th scope="col">Control ilustrativo</th></tr></thead>
+            <tbody>
+            <tr><td data-label="Momento ficticio">Inicio</td><td data-label="Estado e incidencia">Preparado; pendiente de revisión</td><td data-label="Control ilustrativo">El documento pasa a «En revisión».</td></tr>
+            <tr><td data-label="Momento ficticio">Revisión</td><td data-label="Estado e incidencia">Se abre una observación</td><td data-label="Control ilustrativo">El documento queda «Observado».</td></tr>
+            <tr><td data-label="Momento ficticio">Intento de aceptación</td><td data-label="Estado e incidencia">La observación sigue abierta</td><td data-label="Control ilustrativo">Se bloquea la aceptación; no se registra como aceptado.</td></tr>
+            <tr><td data-label="Momento ficticio">Revisión posterior</td><td data-label="Estado e incidencia">La observación está cerrada</td><td data-label="Control ilustrativo">Se comprueba el resto de criterios antes de aceptar.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="example-outcome">Si una aceptación deja de cumplir las condiciones, su estado y fecha deben revisarse de forma coherente. Power BI recibe la información estructurada, no una aceptación contradictoria.</p>
+      </section>
+      <section class="case-evidence" id="evidence" aria-labelledby="evidence-title">
+        <h2 id="evidence-title">Comprobaciones y alcance</h2>
+        <div class="evidence-columns">
+          <div><h3>Qué comprobé</h3><ul>
+            <li>Coherencia entre el estado del entregable, sus incidencias y la aceptación.</li>
+            <li>Actualización de estados y fechas conforme a las reglas del flujo.</li>
+            <li>Compatibilidad de la estructura de datos con los informes de seguimiento.</li>
+          </ul></div>
+          <div><h3>Límites y estado</h3><p>Se describe una automatización funcional de seguimiento, no la implantación general de un sistema de gestión documental. No se atribuyen paneles desplegados, cifras de uso o ahorros medidos.</p></div>
+        </div>
+
+      </section>
+      <section class="case-learning"><h2>Criterio transferible</h2><p>El valor del seguimiento depende de conservar las relaciones entre documento, revisión y observación, además de mostrar un estado.</p></section>
+      <p class="case-editorial-note">Caso anonimizado. Solo se muestran ilustraciones originales y ejemplos inventados; no documentación ni datos de clientes.</p>
+      <nav class="project-pagination" aria-label="Otros trabajos">
+        <a href="../index.html#ingecid-projects">← Trabajos en INGECID</a>
+        <a href="./ingecid-ofertas.html">Preparación de borradores de ofertas técnicas →</a>
+      </nav>
+    </div>
+  </main>
+  <footer class="project-footer"><div class="container"><p>Manuel Fernández Álvarez · Portfolio de ingeniería</p><a href="mailto:manuelffedezal@gmail.com">Contacto →</a></div></footer>
+</body>
+</html>
